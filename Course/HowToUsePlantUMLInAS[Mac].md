@@ -44,7 +44,7 @@ brew info graphviz
 
 我的安装位置在 `/usr/local/Cellar/graphviz/2.38.0`
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f6h4le3ao7j30fu0a6gol.jpg)
+![](./image/005Xtdi2gw1f6h4le3ao7j30fu0a6gol.jpg)
 
 	
 ## 三.用正确的姿势设置plantUML
@@ -56,7 +56,7 @@ brew info graphviz
 #### (我的为：/usr/local/Cellar/graphviz/2.38.0/bin/dot)
 
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2gw1f6h4mbnnhsj30te0g676i.jpg)
+![](./image/005Xtdi2gw1f6h4mbnnhsj30te0g676i.jpg)
 
 ### 3.点击OK 刷新一下界面就能看到结果了。
 
@@ -72,7 +72,7 @@ brew info graphviz
 
 ## About Me
 ### 作者微博: [@GcsSloop](http://weibo.com/GcsSloop)
-<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300 height=100 /> </a>
+<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300 height=100 /> </a>
 
 
 

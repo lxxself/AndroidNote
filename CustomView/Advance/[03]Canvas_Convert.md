@@ -61,7 +61,7 @@
         canvas.drawCircle(0,0,100,mPaint);
 ```
 
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2jw1f2f1ph46qaj30u01hcgm3.jpg" width="300"/>  
+<img src="./image/005Xtdi2jw1f2f1ph46qaj30u01hcgm3.jpg" width="300"/>  
 
 我们首先将坐标系移动一段距离绘制一个圆形，之后再移动一段距离绘制一个圆形，<b>两次移动是可叠加的</b>。
 
@@ -105,7 +105,7 @@
 ```
 (为了更加直观，我添加了一个坐标系，可以比较明显的看出，缩放中心就是坐标原点)
 
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2jw1f2f1vphdjjj30u01hct9r.jpg" width="300" />  
+<img src="./image/005Xtdi2jw1f2f1vphdjjj30u01hct9r.jpg" width="300" />  
 
 接下来我们使用第二种方法让缩放中心位置稍微改变一下，如下：
 ``` java
@@ -124,7 +124,7 @@
 ```
 (图中用箭头指示的就是缩放中心。)
 
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f2f1w7kv8dj30u01hct9s.jpg" width="300" />  
+<img src="./image/005Xtdi2jw1f2f1w7kv8dj30u01hct9s.jpg" width="300" />  
 
 前面两个示例缩放的数值都是正数，按照表格中的说明，**当缩放比例为负数的时候会根据缩放中心轴进行翻转**，下面我们就来实验一下：
 
@@ -143,7 +143,7 @@
         mPaint.setColor(Color.BLUE);            // 绘制蓝色矩形
         canvas.drawRect(rect,mPaint);
 ```
-<img src="http://ww1.sinaimg.cn/large/005Xtdi2jw1f2f1x76o6qj30u01hc0tu.jpg" width="300" />  
+<img src="./image/005Xtdi2jw1f2f1x76o6qj30u01hc0tu.jpg" width="300" />  
 
 > 为了效果明显，这次我不仅添加了坐标系而且对矩形中几个重要的点进行了标注，具有相同字母标注的点是一一对应的。
 
@@ -166,7 +166,7 @@
         mPaint.setColor(Color.BLUE);            // 绘制蓝色矩形
         canvas.drawRect(rect,mPaint);
 ```
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2jw1f2f1xth4p6j30u01hc0u4.jpg" width="300" />  
+<img src="./image/005Xtdi2jw1f2f1xth4p6j30u01hc0u4.jpg" width="300" />  
 
 > 添加了这么多的辅助内容，希望大家能够看懂。
 
@@ -197,7 +197,7 @@
         }
 ```
 
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f2f1yfn22xj30u01hcta9.jpg" width="300" />  
+<img src="./image/005Xtdi2jw1f2f1yfn22xj30u01hcta9.jpg" width="300" />  
 
 *****
 #### ⑶旋转(rotate)
@@ -225,7 +225,7 @@
         canvas.drawRect(rect,mPaint);
 ```
 
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f2f1yws38nj30u01hcmy8.jpg" width="300" />  
+<img src="./image/005Xtdi2jw1f2f1yws38nj30u01hcmy8.jpg" width="300" />  
 
 改变旋转中心位置：
 ``` java
@@ -243,7 +243,7 @@
         canvas.drawRect(rect,mPaint);
 ```
 
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f2f1zcmwb2j30u01hcmy9.jpg" width="300" />
+<img src="./image/005Xtdi2jw1f2f1zcmwb2j30u01hcmy9.jpg" width="300" />
 
 <b>好吧，旋转也是可叠加的</b>
 ``` java
@@ -265,7 +265,7 @@
             canvas.rotate(10);
         }
 ```
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2jw1f2f1zsnj00j30u01hc75a.jpg" width="300" />  
+<img src="./image/005Xtdi2jw1f2f1zsnj00j30u01hc75a.jpg" width="300" />  
 
 *****
 #### ⑷错切(skew)
@@ -302,7 +302,7 @@ Y = sy * x + y
         mPaint.setColor(Color.BLUE);            // 绘制蓝色矩形
         canvas.drawRect(rect,mPaint);
 ```
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f2f20h7i23j30u01hcdgq.jpg" width="300" />  
+<img src="./image/005Xtdi2jw1f2f20h7i23j30u01hcdgq.jpg" width="300" />  
 
 <b>如你所想，错切也是可叠加的，不过请注意，调用次序不同绘制结果也会不同</b>
 ``` java
@@ -321,7 +321,7 @@ Y = sy * x + y
         canvas.drawRect(rect,mPaint);
 ```
 
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2jw1f2f20w0rffj30u01hcgm8.jpg" width="300" />
+<img src="./image/005Xtdi2jw1f2f20w0rffj30u01hcgm8.jpg" width="300" />
 
 *****
 #### ⑸快照(save)和回滚(restore)
@@ -346,14 +346,14 @@ A：画布的操作是不可逆的，而且很多画布操作会影响后续的�
 ##### 状态栈：
 其实这个栈我也不知道叫什么名字，暂时叫做状态栈吧，它看起来像下面这样：
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f2gfqmu2sgj308c0dwmxw.jpg)
+![](./image/005Xtdi2jw1f2gfqmu2sgj308c0dwmxw.jpg)
 
 这个栈可以存储画布状态和图层状态。
 
 <b>Q：什么是画布和图层？<br/>
 A：实际上我们看到的画布是由多个图层构成的，如下图(图片来自网络)：<br/>
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f2gfrc6fdkj308c0dwglr.jpg)
+![](./image/005Xtdi2jw1f2gfrc6fdkj308c0dwglr.jpg)
 
 实际上我们之前讲解的绘制操作和画布操作都是在默认图层上进行的。<br/>
 在通常情况下，使用默认图层就可满足需求，但是如果需要绘制比较复杂的内容，如地图(地图可以有多个地图层叠加而成，比如：政区层，道路层，兴趣点层)等，则分图层绘制比较好一些。<br/>
@@ -443,7 +443,7 @@ public int saveLayerAlpha (float left, float top, float right, float bottom, int
 ## About Me
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300"/> </a>
+<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300"/> </a>
 
 ******
 ## 四.参考资料

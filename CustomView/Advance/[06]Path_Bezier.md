@@ -34,7 +34,7 @@
 
 上一次除了一些常用函数之外，讲解的基本上都是直线，本次需要了解其中的曲线部分,说到曲线，就不得不提大名鼎鼎的贝塞尔曲线。它的发明者是下面这个人(法国数学家PierreBézier)。
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f1ky5bw28pg305k07h3yo.gif)
+![](./image/005Xtdi2jw1f1ky5bw28pg305k07h3yo.gif)
 
 ### 贝塞尔曲线能干什么？
 
@@ -78,11 +78,11 @@
 
 一阶曲线是没有控制点的，仅有两个数据点(A 和 B)，最终效果一个线段。
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f35of045w8j308c0dwq2z.jpg)
+![](./image/005Xtdi2jw1f35of045w8j308c0dwq2z.jpg)
 
 > **上图表示的是一阶曲线生成过程中的某一个阶段，动态过程可以参照下图(本文中贝塞尔曲线相关的动态演示图片来自维基百科)。**
 
-![](https://upload.wikimedia.org/wikipedia/commons/0/00/B%C3%A9zier_1_big.gif)
+![](./image/B%C3%A9zier_1_big.gif)
 
 > **PS：一阶曲线其实就是前面讲解过的lineTo。**
 
@@ -90,23 +90,23 @@
 
 二阶曲线由两个数据点(A 和 C)，一个控制点(B)来描述曲线状态，大致如下：
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f35p4913k7j308c0dw74d.jpg)
+![](./image/005Xtdi2jw1f35p4913k7j308c0dw74d.jpg)
 
 上图中红色曲线部分就是传说中的二阶贝塞尔曲线，那么这条红色曲线是如何生成的呢？接下来我们就以其中的一个状态分析一下：
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f361bjqj2vj308c0dwwem.jpg)
+![](./image/005Xtdi2jw1f361bjqj2vj308c0dwwem.jpg)
 
 连接AB BC，并在AB上取点D，BC上取点E，使其满足条件：
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=%5Cfrac%7BAD%7D%7BAB%7D%20%3D%20%5Cfrac%7BBE%7D%7BBC%7D" style="border:none;" />
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f361oje6h1j308c0dwdg0.jpg)
+![](./image/005Xtdi2jw1f361oje6h1j308c0dwdg0.jpg)
 
 连接DE，取点F，使得: 
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=%5Cfrac%7BAD%7D%7BAB%7D%20%3D%20%5Cfrac%7BBE%7D%7BBC%7D%20%3D%20%5Cfrac%7BDF%7D%7BDE%7D" style="border:none;" />
 
 这样获取到的点F就是贝塞尔曲线上的一个点，动态过程如下：
 
-![](https://upload.wikimedia.org/wikipedia/commons/3/3d/B%C3%A9zier_2_big.gif)
+![](./image/B%C3%A9zier_2_big.gif)
 
 > **PS: 二阶曲线对应的方法是quadTo**
 
@@ -114,11 +114,11 @@
 
 三阶曲线由两个数据点(A 和 D)，两个控制点(B 和 C)来描述曲线状态，如下：
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f36myeqcu5j308c0dwdg2.jpg)
+![](./image/005Xtdi2gw1f36myeqcu5j308c0dwdg2.jpg)
 
 三阶曲线计算过程与二阶类似，具体可以见下图动态效果：
 
-![](https://upload.wikimedia.org/wikipedia/commons/d/db/B%C3%A9zier_3_big.gif)
+![](./image/B%C3%A9zier_3_big.gif)
 
 > **PS: 三阶曲线对应的方法是cubicTo**
 
@@ -138,7 +138,7 @@
 
 首先，两个数据点是控制贝塞尔曲线开始和结束的位置，比较容易理解，而控制点则是控制贝塞尔的弯曲状态，相对来说比较难以理解，所以本示例重点在于理解贝塞尔曲线弯曲状态与控制点的关系，废话不多说，先上效果图：
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f39vugjg0vg308c0e8409.gif)
+![](./image/005Xtdi2gw1f39vugjg0vg308c0e8409.gif)
 
 > 为了更加容易看出控制点与曲线弯曲程度的关系，上图中绘制出了辅助点和辅助线，从上面的动态图可以看出，贝塞尔曲线在动态变化过程中有类似于橡皮筋一样的弹性效果，因此在制作一些弹性效果的时候很常用。
 
@@ -223,7 +223,7 @@ public class Bezier extends View {
 #### 三阶曲线：
 三阶曲线由两个数据点和两个控制点来控制曲线状态。
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2gw1f3bmilt4flg308c0e8q5e.gif)
+![](./image/005Xtdi2gw1f3bmilt4flg308c0e8q5e.gif)
 
 代码:
 
@@ -357,17 +357,17 @@ public class Bezier2 extends View {
 
 #### 效果图：
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f3cg2cs7lyg308c0e8gpn.gif)
+![](./image/005Xtdi2jw1f3cg2cs7lyg308c0e8gpn.gif)
 
 #### 思路分析：
 
 我们最终的需要的效果是将一个圆转变成一个心形，通过分析可知，圆可以由四段三阶贝塞尔曲线组合而成，如下：
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2gw1f3chnpgub3j308c0e7weq.jpg)
+![](./image/005Xtdi2gw1f3chnpgub3j308c0e7weq.jpg)
 
 心形也可以由四段的三阶的贝塞尔曲线组成，如下：
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f3chod09sbj308c0e774j.jpg)
+![](./image/005Xtdi2gw1f3chod09sbj308c0e774j.jpg)
 
 两者的差别仅仅在于数据点和控制点位置不同，因此只需要调整数据点和控制点的位置，就能将圆形变为心形。
 
@@ -383,7 +383,7 @@ public class Bezier2 extends View {
 
  渐变其实就是每次对数据点和控制点稍微移动一点，然后重绘界面，在短时间多次的调整数据点与控制点，使其逐渐接近目标值，通过不断的重绘界面达到一种渐变的效果。过程可以参照下图动态效果：
 
- ![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f3ch74ewiig308c0e8wic.gif)
+ ![](./image/005Xtdi2jw1f3ch74ewiig308c0e8wic.gif)
 
 #### 代码：
 
@@ -564,7 +564,7 @@ public class Bezier3 extends View {
 
 解锁新的境界之[【绘制一个弹性的圆】](http://www.jianshu.com/p/791d3a791ec2)：
 
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2jw1f3cij475bhg30k00zk46m.gif" width=300 />
+<img src="./image/005Xtdi2jw1f3cij475bhg30k00zk46m.gif" width=300 />
 
 (,,• ₃ •,,)
 #### PS: 由于本人水平有限，某些地方可能存在误解或不准确，如果你对此有疑问可以提交Issues进行反馈。
@@ -573,7 +573,7 @@ public class Bezier3 extends View {
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
+<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
 
 ## 参考资料
 [Path](http://developer.android.com/reference/android/graphics/Path.html)<br/>

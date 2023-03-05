@@ -48,7 +48,7 @@ Canvas我们可以称之为画布，能够在上面绘制各种东西，是安�
   canvas.drawColor(Color.BLUE); //绘制蓝色
 ```
 
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f2742437w3j30u01hcjrq.jpg" width = "300" />  
+<img src="./image/005Xtdi2jw1f2742437w3j30u01hcjrq.jpg" width = "300" />  
 
 > 关于颜色的更多资料请参考[基础篇_颜色](https://github.com/GcsSloop/AndroidNote/blob/master/CustomView%2FBase%2F%5B03%5DColor.md)
 
@@ -92,7 +92,7 @@ Canvas我们可以称之为画布，能够在上面绘制各种东西，是安�
 
 > 更多参考这里 [基础篇_坐标系](https://github.com/GcsSloop/AndroidNote/blob/master/CustomView%2FBase%2F%5B01%5DCoordinateSystem.md)
 
-<img src="http://ww1.sinaimg.cn/large/005Xtdi2jw1f2743rkifnj30u01hc74n.jpg" width = "300" />
+<img src="./image/005Xtdi2jw1f2743rkifnj30u01hc74n.jpg" width = "300" />
 
 ******
 
@@ -106,7 +106,7 @@ Canvas我们可以称之为画布，能够在上面绘制各种东西，是安�
         },mPaint);
 ```
 
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f2745k83ybj30u01hcq3d.jpg" width = "300" />
+<img src="./image/005Xtdi2jw1f2745k83ybj30u01hcq3d.jpg" width = "300" />
 
 ******
 
@@ -130,7 +130,7 @@ canvas.drawRect(rectF,mPaint);
 ```
 以上三种方法所绘制出来的结果是完全一样的。
 
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f27478692dj30u01hc3yy.jpg" width = "300" /> 
+<img src="./image/005Xtdi2jw1f27478692dj30u01hc3yy.jpg" width = "300" /> 
 
 看到这里,相信很多观众会产生一个疑问，<b>为什么会有Rect和RectF两种？两者有什么区别吗？</b>
 
@@ -150,7 +150,7 @@ canvas.drawRect(rectF,mPaint);
 ```
 上面两种方法绘制效果也是一样的，但鉴于第二种方法在API21的时候才添加上，所以我们一般使用的都是第一种。
 
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f2747s3c5zj30u01hcq3e.jpg" width = "300" /> 
+<img src="./image/005Xtdi2jw1f2747s3c5zj30u01hcq3e.jpg" width = "300" /> 
 
 下面简单解析一下圆角矩形的几个必要的参数的意思。
 
@@ -166,7 +166,7 @@ canvas.drawRect(rectF,mPaint);
 
 好吧，让你发现了，**这里圆角矩形的角实际上不是一个正圆的圆弧，而是椭圆的圆弧，这里的两个参数实际上是椭圆的两个半径**，他们看起来个如下图：<br/>
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f2748fjw2bj308c0dwmx8.jpg)
+![](./image/005Xtdi2jw1f2748fjw2bj308c0dwmx8.jpg)
 
 **红线标注的 rx 与 ry 就是两个半径，也就是相比绘制矩形多出来的那两个参数。**
 
@@ -185,7 +185,7 @@ canvas.drawRect(rectF,mPaint);
         canvas.drawRoundRect(rectF,700,400,mPaint);
 ```
 
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f2748ugy2pj30u01hcwf1.jpg" width = "300" /> 
+<img src="./image/005Xtdi2jw1f2748ugy2pj30u01hcwf1.jpg" width = "300" /> 
 
 其中灰色部分是我们所选定的矩形，而里面的圆角矩形则变成了一个椭圆，<b>实际上在rx为宽度的一半，ry为高度的一半时，刚好是一个椭圆，通过上面我们分析的原理推算一下就能得到，而当rx大于宽度的一半，ry大于高度的一半时，实际上是无法计算出圆弧的，所以drawRoundRect对大于该数值的参数进行了限制(修正)，凡是大于一半的参数均按照一半来处理。</b>
 
@@ -204,11 +204,11 @@ canvas.drawRect(rectF,mPaint);
 ```
 同样，以上两种方法效果完全一样，但一般使用第一种。
 
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f274afxbiyj30u01hczks.jpg" width = "300" /> 
+<img src="./image/005Xtdi2jw1f274afxbiyj30u01hczks.jpg" width = "300" /> 
 
 绘制椭圆实际上就是绘制一个矩形的内切图形，原理如下，就不多说了：
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f274bq1h4rj308c0dwjrl.jpg)
+![](./image/005Xtdi2jw1f274bq1h4rj308c0dwjrl.jpg)
 
 PS： 如果你传递进来的是一个长宽相等的矩形(即正方形)，那么绘制出来的实际上就是一个圆。
 
@@ -222,7 +222,7 @@ PS： 如果你传递进来的是一个长宽相等的矩形(即正方形)，那
 ```
 绘制圆形有四个参数，前两个是圆心坐标，第三个是半径，最后一个是画笔。
 
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2jw1f274c41kknj30u01hcdgf.jpg" width = "300" /> 
+<img src="./image/005Xtdi2jw1f274c41kknj30u01hcdgf.jpg" width = "300" /> 
 
 ******
 ### 绘制圆弧：
@@ -272,7 +272,7 @@ useCenter   // 是否使用中心
 
 上述代码实际上是绘制了一个起始角度为0度，扫过90度的圆弧，两者的区别就是是否使用了中心点，结果如下：
 
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f274d1smwej30u01hc3z4.jpg" width = "300" /> 
+<img src="./image/005Xtdi2jw1f274d1smwej30u01hc3z4.jpg" width = "300" /> 
 
 可以发现使用了中心点之后绘制出来类似于一个扇形，而不使用中心点则是圆弧起始点和结束点之间的连线加上圆弧围成的图形。这样中心点这个参数的作用就很明显了，不必多说想必大家试一下就明白了。 另外可以关于角度可以参考一下这篇文章： [角度与弧度](https://github.com/GcsSloop/AndroidNote/blob/master/CustomView%2FBase%2F%5B02%5DAngleAndRadian.md)
 
@@ -299,7 +299,7 @@ useCenter   // 是否使用中心
         mPaint.setColor(Color.BLUE);
         canvas.drawArc(rectF2,0,90,true,mPaint);
 ```
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f274e3surgj30u01hc3z4.jpg" width = "300" /> 
+<img src="./image/005Xtdi2jw1f274e3surgj30u01hc3z4.jpg" width = "300" /> 
 
 ******
 ### 简要介绍Paint
@@ -342,7 +342,7 @@ FILL_AND_STROKE       //描边加填充
         canvas.drawCircle(200, 800, 100, paint);
 ```
 
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f274g6lxbpj30u01hcq3n.jpg" width = "300" /> 
+<img src="./image/005Xtdi2jw1f274g6lxbpj30u01hcq3n.jpg" width = "300" /> 
 
 一图胜千言，通过以上实验我们可以比较明显的看出三种模式的区别，如果只需要边缘不需要填充内容的话只需要设置模式为描边(STROKE)即可。
 
@@ -366,7 +366,7 @@ FILL_AND_STROKE       //描边加填充
 
 在展示百分比数据的时候经常会用到饼状图，像这样：
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f274gmnlk3j308c0dwglq.jpg)
+![](./image/005Xtdi2jw1f274gmnlk3j308c0dwglq.jpg)
 
 ### 简单分析
 
@@ -516,7 +516,7 @@ public class PieView extends View {
 
 ### 效果图
 
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f274gz06voj30u01hc3za.jpg" width = "300" /> 
+<img src="./image/005Xtdi2jw1f274gz06voj30u01hc3za.jpg" width = "300" /> 
 
 > **PS: 这个饼状图并没有添加百分比等数据，仅作为示例使用。**
 
@@ -527,7 +527,7 @@ public class PieView extends View {
 ## About Me
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
+<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
 
 ## 参考资料：
 

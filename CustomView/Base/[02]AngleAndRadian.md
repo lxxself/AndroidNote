@@ -34,8 +34,8 @@
 
 **如图:**
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f1s0f975hmj308c0dwmxh.jpg)
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f1s0g3rcg2j308c0dw3yw.jpg)
+![](./image/005Xtdi2jw1f1s0f975hmj308c0dwmxh.jpg)
+![](./image/005Xtdi2jw1f1s0g3rcg2j308c0dw3yw.jpg)
 
 
 ## 三.角度和弧度的换算关系
@@ -56,7 +56,7 @@
 
 >  rad 是弧度， deg 是角度
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f4hui2jaecj305m03lwee.jpg)
+![](./image/005Xtdi2jw1f4hui2jaecj305m03lwee.jpg)
 
 
 ## 四.一些细节问题
@@ -67,13 +67,13 @@
 
 **在默认的屏幕坐标系中角度增大方向为顺时针。**
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f1s2wnsewfj308c0dwt94.jpg)
+![](./image/005Xtdi2jw1f1s2wnsewfj308c0dwt94.jpg)
 
 ## About Me
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/1970/01/about/" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
+<a href="http://www.gcssloop.com/1970/01/about/" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
 
 
 

@@ -9,13 +9,13 @@
 
 在通常的情况下，自定义 View 直接使用系统的事件体系处理就行，我们也不需要特殊处理，然而当一些特殊的控件出现的时候，麻烦就来了，举个栗子：
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f9t9u0tignj308c08cq3f.jpg)
+![](./image/005Xtdi2jw1f9t9u0tignj308c08cq3f.jpg)
 
 这是一个在遥控器上非常常见的按键布局，注意中间上下左右选择的部分，看起来十分简单，然而当你真正准备在手机上实现的时候麻烦就出现了。因为所有的 View 默认都是矩形的，所以事件接收区域也是矩形的，如果直接使用系统提供的 View 来组合出一摸一样的布局也很简单，但点击区域该如何处理？显然有部分点击区域是在控件外面的，并且会产生重叠区域：
 
 > 红色方框表示 View 的可点击区域。
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f9ta3eymeej308c08cwf1.jpg)
+![](./image/005Xtdi2jw1f9ta3eymeej308c08cwf1.jpg)
 
 当我们面对这样比较奇特的控件的时候，有很多处理办法，比较投机的一种就是背景贴一个静态图，按钮做成透明的，设置小一点，放在对应的位置，这样可以保证不会误触，当然了如果想要点击效果可以在按钮按下的时候更新一下背景图，这样虽然也可以，但是这样会导致可点击区域变小，体验效果变差，设计方案变得复杂，而且逻辑也不容易处理，是一种非常糟糕的设计。
 
@@ -38,7 +38,7 @@ Region 直接翻译的意思是 地域，区域。**在此处应该是区域的�
 
 接下来是一个简单的示例，**判断手指是否是在圆形区域内按下**:
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f9xtlae5wzj308c0ea3yn.jpg)
+![](./image/005Xtdi2jw1f9xtlae5wzj308c0ea3yn.jpg)
 
 代码：
 
@@ -105,7 +105,7 @@ public class RegionClickView extends CustomView {
 
 > 画布移动后在手指按下位置绘制一个圆，可以看到，直接拿手指触摸位置的坐标来绘制会导致绘制位置不正确，**两者坐标是相同的，但是由于坐标系不同，导致实际显示位置不同。**
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f9tdc3p84uj308c0d4mx9.jpg)
+![](./image/005Xtdi2jw1f9tdc3p84uj308c0d4mx9.jpg)
 
 代码：
 
@@ -193,7 +193,7 @@ public class CanvasVonvertTouchTest extends CustomView{
 
 那么接下来我们就对上面的示例进行简单的改造一下，让触摸位置和实际绘制绘制重合。小白点和黑色的圆没有完全重合是因为系统显示触摸位置的绘制逻辑和我使用的绘制逻辑不太相同导致的。
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f9te2mzxcvj308c0d40st.jpg)
+![](./image/005Xtdi2jw1f9te2mzxcvj308c0d40st.jpg)
 
 代码：
 
@@ -306,7 +306,7 @@ invertMatrix.mapPoints(pts);
 
 在解决了上述两大难题之后，相信不论形状如何奇葩的自定义控件，基本上都难不倒大家了，最后用一个简单的示例作为结尾，还是文章开头所举的例子，核心内容就是上面讲的两个东西。
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f9tinrk6ilj308c0eat92.jpg)
+![](./image/005Xtdi2jw1f9tinrk6ilj308c0eat92.jpg)
 
 代码：
 
@@ -567,7 +567,7 @@ public class RemoteControlMenu extends CustomView {
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
+<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
 
 
 

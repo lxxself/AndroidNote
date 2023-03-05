@@ -40,7 +40,7 @@ Matrix matrix = new Matrix();
 
 通过这种方式创建出来的并不是一个数值全部为空的矩阵，而是一个单位矩阵,如下:
 
-![](https://ww2.sinaimg.cn/large/006tKfTcgy1fhe1potuf8j302301z3yf.jpg)
+![](./image/006tKfTcgy1fhe1potuf8j302301z3yf.jpg)
 
 #### 有参构造
 
@@ -406,7 +406,7 @@ boolean setPolyToPoly (
 
 Poly全称是Polygon，多边形的意思，了解了意思大致就能知道这个方法是做什么用的了，应该与PS中自由变换中的扭曲有点类似。
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f71ppx7q0lg30go0b44ga.gif)
+![](./image/005Xtdi2jw1f71ppx7q0lg30go0b44ga.gif)
 
 > 从参数我们可以了解到setPolyToPoly最多可以支持4个点，这四个点通常为图形的四个角，可以通过这四个角将视图从矩形变换成其他形状。
 
@@ -459,7 +459,7 @@ public class MatrixSetPolyToPolyTest extends View {
 }
 ```
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f730v51dowj308c0etgm0.jpg)
+![](./image/005Xtdi2jw1f730v51dowj308c0etgm0.jpg)
 
 
 
@@ -512,7 +512,7 @@ if (0 == count) {
 }
 ```
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f7b7v5z6k3g308c0cxdg6.gif)
+![](./image/005Xtdi2jw1f7b7v5z6k3g308c0cxdg6.gif)
 
 **pointCount为1**
 
@@ -529,25 +529,25 @@ if (1 == count) {
 
 当测控点为1的时候，由于你只有一个点可以控制，所以你只能拖拽着它在2D平面上滑动。
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f7b7vp3id5g308c0cxdyx.gif)
+![](./image/005Xtdi2jw1f7b7vp3id5g308c0cxdyx.gif)
 
 **pointCount为2**
 
 当pointCount为2的时候，可以做缩放、平移和旋转。
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f7b7w51e52g308c0cxx2k.gif)
+![](./image/005Xtdi2jw1f7b7w51e52g308c0cxx2k.gif)
 
 **pointCount为3**
 
 当pointCount为3的时候，可以做缩放、平移、旋转和错切。
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f7b7x5mxnug308c0cxwnz.gif)
+![](./image/005Xtdi2jw1f7b7x5mxnug308c0cxwnz.gif)
 
 **pointCount为4**
 
 当pointCount为4的时候，你可以将图像拉伸为任意四边形。
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f7b7ygigbrg308c0cxaks.gif)
+![](./image/005Xtdi2jw1f7b7ygigbrg308c0cxaks.gif)
 
 上面已经用图例比较详细的展示了不同操控点个数的情况，如果你依旧存在疑问，可以获取代码自己试一下。
 
@@ -576,12 +576,12 @@ ScaleToFit 是一个枚举类型，共包含了四种模式:
 
 > 假设灰色部分是dst，橙色部分是src，由于是测试不同宽高比，示例中让dst保持不变，看两种宽高比的src在不同模式下填充的位置。
 
-| src(原始状态) | ![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f737xedthmj308c050glf.jpg) |
+| src(原始状态) | ![](./image/005Xtdi2jw1f737xedthmj308c050glf.jpg) |
 | :-------: | :--------------------------------------: |
-|  CENTER   | ![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f737xqulh9j308c050t8k.jpg) |
-|   START   | ![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f737y0ts9oj308c050glg.jpg) |
-|    END    | ![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f737zi7tm1j308c050a9w.jpg) |
-|   FILL    | ![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f737yj8pcrj308c0500sl.jpg) |
+|  CENTER   | ![](./image/005Xtdi2jw1f737xqulh9j308c050t8k.jpg) |
+|   START   | ![](./image/005Xtdi2jw1f737y0ts9oj308c050glg.jpg) |
+|    END    | ![](./image/005Xtdi2jw1f737zi7tm1j308c050a9w.jpg) |
+|   FILL    | ![](./image/005Xtdi2jw1f737yj8pcrj308c0500sl.jpg) |
 
 
 
@@ -628,7 +628,7 @@ public class MatrixSetRectToRectTest extends View {
 }
 ```
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f7385r77wmj308c0etgm8.jpg)
+![](./image/005Xtdi2jw1f7385r77wmj308c0etgm8.jpg)
 
 
 
@@ -839,7 +839,7 @@ location2 = [0, 243]
 
 > 图片引用自鸿洋大大的博客，稍作了一下处理。
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f74bvmz52mg308c0bbb29.gif)
+![](./image/005Xtdi2gw1f74bvmz52mg308c0bbb29.gif)
 
 博文链接:
 
@@ -857,7 +857,7 @@ location2 = [0, 243]
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
+<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
 
 ## 参考资料
 

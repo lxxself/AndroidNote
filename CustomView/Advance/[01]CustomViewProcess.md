@@ -10,7 +10,7 @@
 
 自定义View绘制流程函数调用链(简化版)
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f638wreu74j30fc0heaay.jpg)
+![](./image/005Xtdi2jw1f638wreu74j30fc0heaay.jpg)
 
 
 ## 一.自定义View分类
@@ -174,7 +174,7 @@ onSizeChanged如下：
 
 具体可以参考 [坐标系](https://github.com/GcsSloop/AndroidNote/blob/master/CustomView/Base/%5B01%5DCoordinateSystem.md) 这篇文章。
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f1qzqwvkkbj308c0dwgm9.jpg)
+![](./image/005Xtdi2gw1f1qzqwvkkbj308c0dwgm9.jpg)
 
   PS：关于onLayout这个函数在讲解自定义ViewGroup的时候会详细讲解。
 
@@ -228,7 +228,7 @@ onSizeChanged如下：
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
+<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
 
 
 ## 参考资料：

@@ -49,7 +49,7 @@ A Picture records drawing calls (via the canvas returned by beginRecording) and 
 
 某一天小萌想在朋友面前显摆一下，于是在单杠上来了一个后空翻,动作姿势请参照下图：
 
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2jw1f2kua0sxg0j30bo0b4aba.jpg" width=300 />
+<img src="./image/005Xtdi2jw1f2kua0sxg0j30bo0b4aba.jpg" width=300 />
 
 朋友都说 恩，很不错。 想再看一遍 (〃ω〃)。ヽ(〃∀〃)ﾉ。⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄
 
@@ -149,7 +149,7 @@ Picture虽然方法就那么几个，但是具体使用起来还是分很多情�
         mPicture.draw(canvas);  
 ```
 
-<img src="http://ww1.sinaimg.cn/large/005Xtdi2jw1f2kwz9956lj30u01hcdg9.jpg" width = "300" />  
+<img src="./image/005Xtdi2jw1f2kwz9956lj30u01hcdg9.jpg" width = "300" />  
 
 **PS：这种方法在比较低版本的系统上绘制后可能会影响Canvas状态，所以这种方法一般不会使用。**
 
@@ -171,7 +171,7 @@ public void drawPicture (Picture picture, RectF dst)
     canvas.drawPicture(mPicture,new RectF(0,0,mPicture.getWidth(),200));
 ```
 
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f2kwzseqawj30u01hc74o.jpg" width = "300"/>  
+<img src="./image/005Xtdi2jw1f2kwzseqawj30u01hc74o.jpg" width = "300"/>  
 
  **PS:对照上一张图片，可以比较明显的看出，绘制的内容根据选区进行了缩放。 **
 
@@ -186,7 +186,7 @@ public void drawPicture (Picture picture, RectF dst)
         drawable.draw(canvas);
 ```
 
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2jw1f2kx0bquw3j30u01hcdg8.jpg" width = "300" />  
+<img src="./image/005Xtdi2jw1f2kx0bquw3j30u01hcdg8.jpg" width = "300" />  
 
 **PS:此处setBounds是设置在画布上的绘制区域，并非根据该区域进行缩放，也不是剪裁Picture，每次都从Picture的左上角开始绘制。**
 
@@ -268,7 +268,7 @@ PS:图片左上角位置默认为坐标原点。
 
 > 关于Matrix和Paint暂时略过吧，一展开又是啰啰嗦嗦一大段，反正挖坑已经是常态了，大家应该也习惯了(PAP).
 
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2gw1f4ixnjrn83j30u01hcabc.jpg" width = "300" /> 
+<img src="./image/005Xtdi2gw1f4ixnjrn83j30u01hcabc.jpg" width = "300" /> 
 
 第二种方法就是在绘制时指定了图片左上角的坐标(距离坐标原点的距离)：
 
@@ -278,7 +278,7 @@ PS:图片左上角位置默认为坐标原点。
     canvas.drawBitmap(bitmap,200,500,new Paint());
 ```
 
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2gw1f4ixoug2x8j30u01hcgn4.jpg" width = "300" /> 
+<img src="./image/005Xtdi2gw1f4ixoug2x8j30u01hcgn4.jpg" width = "300" /> 
 
 第三种方法比较有意思，上面多了两个矩形区域(src,dst),这两个矩形选区是干什么用的？
 
@@ -301,23 +301,23 @@ PS:图片左上角位置默认为坐标原点。
         // 绘制图片
         canvas.drawBitmap(bitmap,src,dst,null);
 ```
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2gw1f4ixqgk8rwj30u01hc756.jpg" width = "300" /> 
+<img src="./image/005Xtdi2gw1f4ixqgk8rwj30u01hc756.jpg" width = "300" /> 
 
 **详解：**
 
 上面是以绘制该图为例，用src指定了图片绘制部分的区域，即下图中红色方框标注的区域。
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f2kx2daw1qj305k05kq39.jpg)
+![](./image/005Xtdi2jw1f2kx2daw1qj305k05kq39.jpg)
 
 然后用dst指定了绘制在屏幕上的绘制，即下图中蓝色方框标注的区域，图片宽高会根据指定的区域自动进行缩放。
 
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2gw1f4ixr3skcjj30u01hc3za.jpg" width = "300" /> 
+<img src="./image/005Xtdi2gw1f4ixr3skcjj30u01hc3za.jpg" width = "300" /> 
 
 从上面可知，第三种方法可以绘制图片的一部分到画布上，这有什么用呢？
 
 如果你看过某些游戏的资源文件，你可能会看到如下的图片(图片来自网络)：
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f2kx3lk1ucj30kg04omz7.jpg)
+![](./image/005Xtdi2jw1f2kx3lk1ucj30kg04omz7.jpg)
 
 用一张图片包含了大量的素材，在绘制的时候每次只截取一部分进行绘制，这样可以大大的减少素材数量，而且素材管理起来也很方便。
 
@@ -329,11 +329,11 @@ PS:图片左上角位置默认为坐标原点。
 
 资源文件如下：
 
-![](https://raw.githubusercontent.com/GcsSloop/AndroidNote/master/CustomView/Advance/Res/Checkmark.png)
+![](./image/Checkmark.png)
 
 最终效果如下：
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f2kx67fkkog306g0b43yn.gif)
+![](./image/005Xtdi2jw1f2kx67fkkog306g0b43yn.gif)
 
 源码如下：
 
@@ -401,7 +401,7 @@ PS:图片左上角位置默认为坐标原点。
         // 参数分别为 (文本 基线x 基线y 画笔)
         canvas.drawText(str,200,500,textPaint);
 ```
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f3njfsi0l4j30dw0nuwey.jpg" width = "300" />  
+<img src="./image/005Xtdi2gw1f3njfsi0l4j30dw0nuwey.jpg" width = "300" />  
 
 > PS: 图中字符串下方的红线是基线y，基线x未在图中画出。
 
@@ -426,7 +426,7 @@ PS:图片左上角位置默认为坐标原点。
         // 参数分别为 (字符串 开始截取位置 结束截取位置 基线x 基线y 画笔)
         canvas.drawText(str,1,3,200,500,textPaint);
 ```
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2gw1f3njh66018j30dw0nuq3b.jpg" width = "300" />  
+<img src="./image/005Xtdi2gw1f3njh66018j30dw0nuq3b.jpg" width = "300" />  
 
 另外，对于字符数组char[]我们截取字符串使用起始位置(index)和长度(count)来确定。
 
@@ -440,7 +440,7 @@ PS:图片左上角位置默认为坐标原点。
         // 参数为 (字符数组 起始坐标 截取长度 基线x 基线y 画笔)
         canvas.drawText(chars,1,3,200,500,textPaint);
 ```
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f3njhnldb5j30dw0nu74o.jpg" width = "300" />  
+<img src="./image/005Xtdi2gw1f3njhnldb5j30dw0nu74o.jpg" width = "300" />  
 
 ### 第二类(drawPosText)
 
@@ -461,7 +461,7 @@ PS:图片左上角位置默认为坐标原点。
         },textPaint);
 ```
 
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f2kx9fl8c8j30u01hcglz.jpg" width = "300" />  
+<img src="./image/005Xtdi2jw1f2kx9fl8c8j30u01hcglz.jpg" width = "300" />  
 
 不过嘛，虽然虽然这个方法也比较容易理解，但是关于这个方法我个人是不推荐使用的，因为坑比较多，主要有一下几点：
 
@@ -487,7 +487,7 @@ public void drawPosText (char[] text, int index, int count, float[] pos, Paint p
 
 学会了图片和文字绘制，对于大部分自定义View都能制作了，可以去看看这位大神制作的作品，尝试模仿一下[一个绚丽的loading动效分析与实现！](http://blog.csdn.net/tianjian4592/article/details/44538605)
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f2kxbki0wtg308c069mzr.gif)
+![](./image/005Xtdi2jw1f2kxbki0wtg308c069mzr.gif)
 
 (,,• ₃ •,,)
 
@@ -497,7 +497,7 @@ public void drawPosText (char[] text, int index, int count, float[] pos, Paint p
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
+<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
 
 ## 参考资料
 

@@ -163,8 +163,8 @@ Markdown支持段内换行，如果你想进行段落内换行可以在上一行
     <td><a href="http://www.gcssloop.com" target="_blank">GcsSloop</a></td>
   </tr>
   <tr class="alternate">
-    <td>![GcsSloop Blog](http://www.gcssloop.com/assets/siteinfo/friends/gcssloop.jpg)</td>
-    <td><img src="http://www.gcssloop.com/assets/siteinfo/friends/gcssloop.jpg" alt="GcsSloop Blog" /></td>
+    <td>![GcsSloop Blog](./image/gcssloop.jpg)</td>
+    <td><img src="./image/gcssloop.jpg" alt="GcsSloop Blog" /></td>
   </tr>
 </table>
 
@@ -328,4 +328,4 @@ int a = 5;
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
+<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>

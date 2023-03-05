@@ -15,7 +15,7 @@
 
 如下图，View是一层一层嵌套的，当手指点击 `View1` 的时候，下面的`ViewGroupA`、 `RootView`  等也是能够响应的，为了确定到底应该是哪个View处理这次点击事件，就需要事件分发机制来帮忙。
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f87nsnluf5j308c0eamxg.jpg)
+![](./image/005Xtdi2jw1f87nsnluf5j308c0eamxg.jpg)
 
 
 
@@ -60,7 +60,7 @@
 
 **View结构:**
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f87juodlepj308q09ut8v.jpg)
+![](./image/005Xtdi2jw1f87juodlepj308q09ut8v.jpg)
 
 **可以看到在上面的View结构中莫名多出来的两个东西，`PhoneWindow` 和 `DecorView` ，这两个我们并没有在Layout文件中定义过，但是为什么会存在呢？**
 
@@ -153,7 +153,7 @@ Activity <－ PhoneWindow <－ DecorView <－ ViewGroup <－ ... <－ View
 
 ### 1.点击 View1 区域但没有任何 View 消费事件
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f87nsnluf5j308c0eamxg.jpg)
+![](./image/005Xtdi2jw1f87nsnluf5j308c0eamxg.jpg)
 
 当手指在 `View1` 区域点击了一下之后，如果所有View都不消耗事件，你就能看到一个完整的事件分发流程，大致如下：
 
@@ -161,7 +161,7 @@ Activity <－ PhoneWindow <－ DecorView <－ ViewGroup <－ ... <－ View
 >
 > 绿色箭头方向表示事件回传方向。
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f88i0q8uozj30nm0kqwhm.jpg)
+![](./image/005Xtdi2jw1f88i0q8uozj30nm0kqwhm.jpg)
 
 
 > **注意: 上图显示分发流程仅仅是一个示意流程，并不代表实际情况，如果按照实际情况绘制，会导致流程图非常复杂和混乱，在纠结了好久之后做了一个艰难的决定，采用这样一个简化后的流程。**
@@ -215,7 +215,7 @@ MainActivity [老板]: onTouchEvent           这么简单都做不了,你们�
 
 如果事件被View1消费掉了则事件会回传告诉上层View这个事件已经被我解决了，上层View就无需再响应了。
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f88ll27wv9j30nm0kqtbo.jpg)
+![](./image/005Xtdi2jw1f88ll27wv9j30nm0kqtbo.jpg)
 
 > 注意：这张图中的事件回传路径才是正确的路径。
 
@@ -239,7 +239,7 @@ View1        [码农]: onTouchEvent           做好了.
 
 > 加一道光：
 >
-> ![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f88oqj0o4jj304j03paa4.jpg)
+> ![](./image/005Xtdi2jw1f88oqj0o4jj304j03paa4.jpg)
 
 
 
@@ -247,7 +247,7 @@ View1        [码农]: onTouchEvent           做好了.
 
 > 上层的View有权拦截事件，不传递给下层View，例如 ListView 滑动的时候，就不会将事件传递给下层的子 View。
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f88p3r45vfj30nm0kqn00.jpg)
+![](./image/005Xtdi2jw1f88p3r45vfj30nm0kqn00.jpg)
 
 > 注意：可以看到，如果上层拦截了事件，下层View将接收不到事件信息。
 
@@ -310,5 +310,5 @@ Android 中事件分发机制原理虽然非常简单，但由于实际场景非
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
+<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
 

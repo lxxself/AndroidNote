@@ -55,13 +55,13 @@ jCenter       | jCenter貌似稍微简单一点，但也不是省油的灯。
 
 在AndroidStudio中新建一个Project用于发布项目，新建完成之后结果是这样子:
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f239wl5amtj30rs0gon0g.jpg)
+![](./image/005Xtdi2jw1f239wl5amtj30rs0gon0g.jpg)
 
 ## 第 2 步: 在这个Project中添加一个Library
 
 添加的这个Library就是我要发布的仓库，Library的名字无所谓,可以随便起(*我这里就叫library*)。添加完成之后是这样子：
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f239xb835xj30rs0gowiv.jpg)
+![](./image/005Xtdi2jw1f239xb835xj30rs0gowiv.jpg)
 
 ### 图中的几个标注
 
@@ -81,7 +81,7 @@ apply plugin: 'com.android.library'
 
 你需要对你的项目简单的配置一下:
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f239y5xsj4j30rs0gowit.jpg)
+![](./image/005Xtdi2jw1f239y5xsj4j30rs0gowit.jpg)
 
 **在你项目的根节点的 build.gradle(图示1) 中添加如下代码:**
 
@@ -111,23 +111,23 @@ buildscript {
 ## 第 5 步: Release你的仓库或者给你的仓库打一个Tag(重点)
 
 ### 1.点击图示进入Release界面
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f239yqr44cj30rs0goadk.jpg)
+![](./image/005Xtdi2jw1f239yqr44cj30rs0goadk.jpg)
 
 ### 2.创建一个Release或Tag
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f239z1dnr8j30rs0goaco.jpg)
+![](./image/005Xtdi2jw1f239z1dnr8j30rs0goaco.jpg)
 
 ### 3.填写基本信息
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f239zctc5xj30rs0goq7w.jpg)
+![](./image/005Xtdi2jw1f239zctc5xj30rs0goq7w.jpg)
 
 ### 4.完成
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f239zpfkcwj30rs0gogns.jpg)
+![](./image/005Xtdi2jw1f239zpfkcwj30rs0gogns.jpg)
 
 ## 第 6 步: 将你的仓库地址提交到JitPack(重点)
 
 ### 1.将你的仓库地址提交到[JitPack](https://jitpack.io)
 **[JitPack地址戳这里](https://jitpack.io)**
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f23a055uoej30rs0godi0.jpg)
+![](./image/005Xtdi2jw1f23a055uoej30rs0godi0.jpg)
 
 序号 | 解释
 :---:|--------
@@ -140,7 +140,7 @@ buildscript {
 ### 2.JitPack自动生成的配置信息
 在上传完成之后，JitPack会自动生成引用该仓库的配置信息，如下：
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f23a0fd5iyj30rs0gotb2.jpg)
+![](./image/005Xtdi2jw1f23a0fd5iyj30rs0gotb2.jpg)
 
 **以上就是教程的全部内容，各位小伙伴可以回去愉快的发布自己的开源库了。**
 ### [JitPack地址](https://jitpack.io)
@@ -149,7 +149,7 @@ buildscript {
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
+<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
 
 
 

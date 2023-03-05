@@ -33,7 +33,7 @@ ezgif | 在线制作GIF的工具，这个的功能也很强大，支持将多张
 
 这个用起来很方便，录制后能直接保存在电脑上。
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f13ro2pqw2j30bd0ahwfi.jpg)
+![](./image/005Xtdi2jw1f13ro2pqw2j30bd0ahwfi.jpg)
 
 1.选到该选项卡
 

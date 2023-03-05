@@ -10,14 +10,14 @@
 
 （**PS：其中的∠a 是对应的，注意y轴方向！**）
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f1qygzfvhoj308c0dwglr.jpg)
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f1qyhbqvihj308c0dwjrh.jpg)
+![](./image/005Xtdi2jw1f1qygzfvhoj308c0dwglr.jpg)
+![](./image/005Xtdi2jw1f1qyhbqvihj308c0dwjrh.jpg)
 
 **实际屏幕上的默认坐标系如下：**
 
 > PS: 假设其中棕色部分为手机屏幕
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f1qyhjy7h8j308c0dwq32.jpg)
+![](./image/005Xtdi2jw1f1qyhjy7h8j308c0dwq32.jpg)
 
 ## 二.View的坐标系
 
@@ -32,7 +32,7 @@
 
 **如下图所示：**
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f1qzqwvkkbj308c0dwgm9.jpg)
+![](./image/005Xtdi2gw1f1qzqwvkkbj308c0dwgm9.jpg)
 
 ## 三.MotionEvent中 get 和 getRaw 的区别
 
@@ -49,7 +49,7 @@
 
 > PS:其中相同颜色的内容是对应的，其中为了显示方便，蓝色箭头向左稍微偏移了一点.
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f1r2bdlqhbj308c0dwwew.jpg)
+![](./image/005Xtdi2jw1f1r2bdlqhbj308c0dwwew.jpg)
 
 ## 四.核心要点
 
@@ -67,5 +67,5 @@
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/1970/01/about/" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
+<a href="http://www.gcssloop.com/1970/01/about/" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
 

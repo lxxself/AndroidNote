@@ -1,6 +1,6 @@
 # AtomicFile 源码解析
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1faa9dj0nf7j30rs05kaaf.jpg)
+![](./image/005Xtdi2jw1faa9dj0nf7j30rs05kaaf.jpg)
 
 ## 什么是 AtomicFile ?
 
@@ -37,7 +37,7 @@ AtomicFile 在 `android.support.v4.util` 包下，**是一个与文件相关的�
 
 AtomicFile 原理其实非常简单，下面用一张图简单展示一下其原理：
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1faaeg4kqo5j30lu0tegp5.jpg)
+![](./image/005Xtdi2jw1faaeg4kqo5j30lu0tegp5.jpg)
 
 ## AtomicFile 源码解析
 
@@ -273,4 +273,4 @@ AtomicFile 作为一个工具类，有其方便之处，同时也有一些需要
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
+<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>

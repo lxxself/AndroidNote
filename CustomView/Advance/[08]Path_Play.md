@@ -10,7 +10,7 @@
 
 先放一个图镇楼，省的下面无聊的内容把你们都吓跑了Σ(￣。￣ﾉ)ﾉ
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f4fp2myqo4g308c05k75k.gif)
+![](./image/005Xtdi2jw1f4fp2myqo4g308c05k75k.gif)
 
 ------
 
@@ -99,7 +99,7 @@ com.gcssloop.canvas E/TAG: forceClosed=true----->800.0
 
 绘制在界面上的效果如下:
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f49allf7gij308c0et3yk.jpg)
+![](./image/005Xtdi2jw1f49allf7gij308c0et3yk.jpg)
 
 我们所创建的 Path 实际上是一个边长为 200 的正方形的三条边，通过上面的示例就能验证以上两个问题。
 
@@ -151,7 +151,7 @@ boolean getSegment (float startD, float stopD, Path dst, boolean startWithMoveTo
 
 > 矩形边长400dp，起始点在左上角，顺时针
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f4bohcxzhqj308c0etwej.jpg)
+![](./image/005Xtdi2jw1f4bohcxzhqj308c0etwej.jpg)
 
 代码:
 
@@ -173,7 +173,7 @@ canvas.drawPath(dst, mDeafultPaint);                        // 绘制 dst
 
 结果如下：
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f4bpmetj7wj308c0etdfu.jpg)
+![](./image/005Xtdi2jw1f4bpmetj7wj308c0etdfu.jpg)
 
 从上图可以看到我们成功到将需要到片段截取了出来，然而当 dst 中有内容时会怎样呢？
 
@@ -195,7 +195,7 @@ canvas.drawPath(dst, mDeafultPaint);                        // 绘制 Path
 
 结果如下:
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2gw1f4cg8rl0wmj308c0et74b.jpg)
+![](./image/005Xtdi2gw1f4cg8rl0wmj308c0et74b.jpg)
 
 从上面的示例可以看到 dst 中的线段保留了下来，可以得到结论：**被截取的 Path 片段会添加到 dst 中，而不是替换 dst 中到内容。**
 
@@ -219,7 +219,7 @@ canvas.drawPath(dst, mDeafultPaint);                        // 绘制 Path
 
 结果如下：
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f4cgdgc7etj308c0et3yk.jpg)
+![](./image/005Xtdi2gw1f4cgdgc7etj308c0et3yk.jpg)
 
 从该示例我们又可以得到一条结论：**如果 startWithMoveTo 为 true, 则被截取出来到Path片段保持原状，如果 startWithMoveTo 为 false，则会将截取出来的 Path 片段的起始点移动到 dst 的最后一个点，以保证 dst 的连续性。**
 
@@ -238,7 +238,7 @@ canvas.drawPath(dst, mDeafultPaint);                        // 绘制 Path
 
 如下，我们创建了一个 Path 并使其中包含了两个闭合的曲线，内部的边长是200，外面的边长是400，现在我们使用 PathMeasure 分别测量两条曲线的总长度。
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f4ctzjr08dj308c0et74c.jpg)
+![](./image/005Xtdi2jw1f4ctzjr08dj308c0et74c.jpg)
 
 代码：
 
@@ -298,9 +298,9 @@ boolean getPosTan (float distance, float[] pos, float[] tan)
 
 `tan` 是用来判断 Path 上趋势的，即在这个位置上曲线的走向，请看下图示例，注意箭头的方向:
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f4dtufydm4g308c0etmyl.gif)
+![](./image/005Xtdi2jw1f4dtufydm4g308c0etmyl.gif)
 
-**[点击这里下载箭头图片](http://ww1.sinaimg.cn/large/005Xtdi2jw1f4gam21ktoj3069069jre.jpg)**
+**[点击这里下载箭头图片](./image/005Xtdi2jw1f4gam21ktoj3069069jre.jpg)**
 
 可以看到 上图中箭头在沿着 Path 运动时，方向始终与 Path 走向保持一致，保持方向主要就是依靠 `tan` 。
 
@@ -368,7 +368,7 @@ invalidate();                                                           // 重�
 
 关于`tan`这个参数有很多魔法师不理解，特此拉出来详述一下，`tan` 在数学中被称为正切，在直角三角形中，一个锐角的**正切**定义为它的对边(Opposite side)与邻边(Adjacent side)的比值(来自维基百科)：
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f8wyvmjf9gj307y01kdfr.jpg)
+![](./image/005Xtdi2jw1f8wyvmjf9gj307y01kdfr.jpg)
 
 我们此处用 `tan` 来描述 Path 上某一点的切线方向，**主要用了两个数值 tan[0] 和 tan[1] 来描述这个切线的方向(切线方向与x轴夹角)** ，看上面公式可知 `tan` 既可以用 `对边／邻边` 来表述，也可以用 `sin／cos` 来表述，此处用两种理解方式均可以(**注意下面等价关系**):
 
@@ -379,7 +379,7 @@ invalidate();                                                           // 重�
 
 **以 `sin／cos`理解:**
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f8wzrmz33tj308c0etq3c.jpg)
+![](./image/005Xtdi2jw1f8wzrmz33tj308c0etq3c.jpg)
 
 
 
@@ -394,7 +394,7 @@ tan[1] = sin = 1
 
 按照这种理解方式需要借助一个单位圆，单位圆上任意一点到圆心到距离均为 1，以下图30度为例：  
 
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f8x0h7l7epj30k00k0juo.jpg" width="500" />
+<img src="./image/005Xtdi2jw1f8x0h7l7epj30k00k0juo.jpg" width="500" />
 
 tan30 = 对边／邻边 = AB／OA = B点y坐标／B点x坐标
 
@@ -496,8 +496,8 @@ SVG 是一种矢量图，内部用的是 xml 格式化存储方式存储这操�
 
 Path 和 SVG 结合通常能诞生出一些奇妙的东西，如下:
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f4g87vfjbeg30690b4go8.gif)
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f4g89vqhqwg30690b4mzu.gif)
+![](./image/005Xtdi2jw1f4g87vfjbeg30690b4go8.gif)
+![](./image/005Xtdi2jw1f4g89vqhqwg30690b4mzu.gif)
 
 > **该图片来自这个开源库 ->[PathView](https://github.com/geftimov/android-pathview)** <br/>
 > **SVG 转 Path 的解析可以用这个库 -> [AndroidSVG](https://bigbadaboom.github.io/androidsvg/)**
@@ -514,7 +514,7 @@ Path 和 SVG 结合通常能诞生出一些奇妙的东西，如下:
 
 先放一个效果图，然后分析一下实现过程:
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f4fp2myqo4g308c05k75k.gif)
+![](./image/005Xtdi2jw1f4fp2myqo4g308c05k75k.gif)
 
 这是一个搜索的动效图，通过分析可以得到它应该有四种状态，分别如下:
 
@@ -529,7 +529,7 @@ Path 和 SVG 结合通常能诞生出一些奇妙的东西，如下:
 
 > 其中 `正在搜索` 这个状态持续时间长度是不确定的，在没有搜索完成前，应该一直处于搜索状态。
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f4g4i3c06cj30a60gb3yt.jpg)
+![](./image/005Xtdi2jw1f4g4i3c06cj30a60gb3yt.jpg)
 
 简单的分析了其大致的流程之后，就到了制作的重点:对细节对把握。
 
@@ -537,11 +537,11 @@ Path 和 SVG 结合通常能诞生出一些奇妙的东西，如下:
 
 为了制作对方便，此处整个动效用了两个 Path， 一个是中间对放大镜， 另一个则是外侧的圆环,将两者全部画出来是这样子的。
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f4gbhxuuktj308c0etwej.jpg) 
+![](./image/005Xtdi2jw1f4gbhxuuktj308c0etwej.jpg) 
 
 其中 Path 的走向要把握好，如下(只是一个放大镜，并不是♂):
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f4gbjj3fd1j308c05kt8i.jpg)
+![](./image/005Xtdi2jw1f4gbjj3fd1j308c05kt8i.jpg)
 
 其中圆形上面的点可以用 PathMeasure 测量，无需计算。
 
@@ -557,7 +557,7 @@ Path 和 SVG 结合通常能诞生出一些奇妙的东西，如下:
 
 ### 最终效果
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f4gbmtj0mvg308c0etq58.gif)
+![](./image/005Xtdi2jw1f4gbmtj0mvg308c0etq58.gif)
 
 ### 源码
 

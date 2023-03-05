@@ -163,7 +163,7 @@ XOR      | [Sa + Da - 2 * Sa * Da, Sc * (1 - Da) + (1 - Sa) * Dc]
 
 用示例图来查看使用不同模式时的混合效果如下（src表示输入的图，dst表示原Canvas上的内容）：
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2gw1f1wa0f0mzjj30hh0fsjt8.jpg)
+![](./image/005Xtdi2gw1f1wa0f0mzjj30hh0fsjt8.jpg)
 
 
 ## 五.参考资料
@@ -174,6 +174,6 @@ XOR      | [Sa + Da - 2 * Sa * Da, Sc * (1 - Da) + (1 - Sa) * Dc]
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/1970/01/about/" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
+<a href="http://www.gcssloop.com/1970/01/about/" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
 
 

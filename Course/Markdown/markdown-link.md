@@ -86,10 +86,10 @@ Sloop 喝过半杯咖啡，涨红的脸色渐渐复了原，旁人便又问道�
 > 顺便为 DiyCode 打一个小广告，欢迎更多小伙伴的加入。
 
 ```markdown
-[![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f9e6ii0bsgj30xc04gaau.jpg)](http://www.diycode.cc/wiki/encouragement)
+[![](./image/005Xtdi2jw1f9e6ii0bsgj30xc04gaau.jpg)](http://www.diycode.cc/wiki/encouragement)
 ```
 
-[![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f9e6ii0bsgj30xc04gaau.jpg)](http://www.diycode.cc/wiki/encouragement){:target="_blank"}
+[![](./image/005Xtdi2jw1f9e6ii0bsgj30xc04gaau.jpg)](http://www.diycode.cc/wiki/encouragement){:target="_blank"}
 
 *****
 
@@ -144,12 +144,12 @@ GcsSloop[^1]是一个超级魔法师[^2] 。
 使用 `{:width="300" height="100"}` 或者 HTML 格式可以控制图片显示大小，图片有宽度(width)和高度(height)两个属性，如果只指定了一个，另一个会按照比例缩放。
 
 ```
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f9k7b8a6vmj312w0rg143.jpg){:width="300"}
+![](./image/005Xtdi2jw1f9k7b8a6vmj312w0rg143.jpg){:width="300"}
 
-<img src="http://ww1.sinaimg.cn/large/005Xtdi2jw1f9k7b8a6vmj312w0rg143.jpg" width="300"/>
+<img src="./image/005Xtdi2jw1f9k7b8a6vmj312w0rg143.jpg" width="300"/>
 ```
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f9k7b8a6vmj312w0rg143.jpg){:width="300"}
+![](./image/005Xtdi2jw1f9k7b8a6vmj312w0rg143.jpg){:width="300"}
 
 右键，新标签页打开图片，你会发现原图其实挺大的。  
 注意: 部分平台可能不识别 `{:width="300" height="100"}` 标签，你正在看的这个 GitHub 依旧不识别。
@@ -171,7 +171,7 @@ Markdown 存在很多的变种，对其语法进行了不同程度的拓展，�
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
+<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
 
 ## 参考链接：
 

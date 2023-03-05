@@ -31,7 +31,7 @@
 
 我们Camera使用的3维坐标系是**左手坐标系，即左手手臂指向x轴正方向，四指弯曲指向y轴正方向，此时展开大拇指指向的方向是z轴正方向**。
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f7mruav2nhj308c05iglp.jpg)
+![](./image/005Xtdi2jw1f7mruav2nhj308c05iglp.jpg)
 
 > 至于为什么要用左手坐标系呢？~~大概是因为赶工的时候右手不方便比划吧，大雾。~~实际上不同平台上使用的坐标系也有不同，有的是左手，有的是右手，貌似并没有统一的标准，只需要记住 Android 平台上面使用的是左手坐标系即可。
 
@@ -48,7 +48,7 @@
 
 > 注意y轴默认方向是向上，而2D则是向下，另外本图不代表3D坐标系实际位置。
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f7nxn8hcqqj308c0ea74a.jpg)
+![](./image/005Xtdi2jw1f7nxn8hcqqj308c0ea74a.jpg)
 
 
 
@@ -69,7 +69,7 @@
 
 **Android 上面观察View的摄像机默认位置在屏幕左上角，而且是距屏幕有一段距离的，假设灰色部分是手机屏幕，白色是上面的一个View，摄像机位置看起来大致就是下面这样子的(为了更好的展示摄像机的位置，做了一个空间转换效果的动图)。**
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f7q71yek4wg308c058go5.gif)
+![](./image/005Xtdi2jw1f7q71yek4wg308c058go5.gif)
 
 > 摄像机的位置默认是 (0, 0, -576)。其中 -576＝ -8 x 72，虽然官方文档说距离屏幕的距离是 -8, 但经过测试实际距离是 -576 像素，当距离为 -10 的时候，实际距离为 -720 像素。我使用了3款手机测试，屏幕大小和像素密度均不同，但结果都是一样的。
 >
@@ -181,11 +181,11 @@ Matrix: [1.0, 0.0, 0.0][0.0, 1.0, 0.0][0.0, 0.0, 1.0]
 
 > 假设大矩形是手机屏幕，白色小矩形是View，摄像机位于屏幕左上角，请注意上面View与摄像机的距离以及下方View的大小以及距离左上角(摄像机在屏幕投影位置)的距离。
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f7qerbksn4g30dc0ct7vt.gif)
+![](./image/005Xtdi2jw1f7qerbksn4g30dc0ct7vt.gif)
 
 至于为什么会这样，因为我们人眼视觉就是这样的，当我们看向远方的时候，视线最终都会消失在视平线上，如果你站在两条平行线中间，看起来它们会在远方(视平线上)相交，虽然在3D空间上两者距离不变，但在2D投影上却是越来越接近，如下图(图片来自网络):
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f7qf2vug02j308c08ct9w.jpg)
+![](./image/005Xtdi2jw1f7qf2vug02j308c08ct9w.jpg)
 
 **结论:**
 
@@ -216,9 +216,9 @@ void rotateZ (float deg);
 这个东西瞎扯理论也不好理解，直接上图:
 
 <p align="center">
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f7sg375gbgg308c0eak4l.gif" width="240" />
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f7sgtl0nryg308c0eatm8.gif" width="240" />
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f7sgtxp6awg308c0eah5h.gif" width="240" />
+<img src="./image/005Xtdi2jw1f7sg375gbgg308c0eak4l.gif" width="240" />
+<img src="./image/005Xtdi2jw1f7sgtl0nryg308c0eatm8.gif" width="240" />
+<img src="./image/005Xtdi2jw1f7sgtxp6awg308c0eah5h.gif" width="240" />
 </p>
 
 **以上三张图分别为，绕x轴，y轴，z轴旋转的情况，至于为什么没有显示z轴，是因为z轴是垂直于手机屏幕的，在屏幕上的投影就是一个点。**
@@ -313,7 +313,7 @@ public class Rotate3dAnimation extends Animation {
 
 不知诸位在使用的时候可否发现了一个问题，同一份代码在不同手机上显示效果也是不同的，在像素密度较低的手机上，旋转效果比较正常，但是在像素密度较高的手机上显示效果则会很夸张，具体会怎样的，下面就来看一下具体效果。
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f7sk60825wg308c0ea1kx.gif)
+![](./image/005Xtdi2jw1f7sk60825wg308c0ea1kx.gif)
 
 可以看到，图片不仅因为形变失真，而且在中间一段因为形变过大导致图片无法显示，当然了，单个手机失真，你可以用`depthZ`忽悠过去，当 `depthZ` 设置的数值比较大大时候，图像在翻转同时会远离摄像头，距离比较远，失真就不会显得很严重，但这仍掩盖不了在不同手机上显示效果不同。
 
@@ -415,7 +415,7 @@ public class Rotate3dAnimation extends Animation {
 
 修改后效果：
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f7sksrhraog308c0ea4qi.gif)
+![](./image/005Xtdi2jw1f7sksrhraog308c0ea4qi.gif)
 
 
 
@@ -511,13 +511,13 @@ translate: [1.0, 0.0, -72.0][0.0, 1.0, 0.0][0.0, 0.0, 1.0
 
 #### [从零开始打造一个Android 3D立体旋转容器](http://blog.csdn.net/mr_immortalz/article/details/51918560)
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f7sm4xoh4ig308c0enx3p.gif)
+![](./image/005Xtdi2jw1f7sm4xoh4ig308c0enx3p.gif)
 
 
 
 #### [FlipShare](https://github.com/JeasonWong/FlipShare)
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f7sm7ak62pg308c0et4qp.gif)
+![](./image/005Xtdi2gw1f7sm7ak62pg308c0et4qp.gif)
 
 
 
@@ -525,7 +525,7 @@ translate: [1.0, 0.0, -72.0][0.0, 1.0, 0.0][0.0, 0.0, 1.0
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
+<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
 
 
 

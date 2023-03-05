@@ -1,6 +1,6 @@
 # 程序员练级指北
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1fa7c95aispj30rs07qmyp.jpg)
+![](./image/005Xtdi2jw1fa7c95aispj30rs07qmyp.jpg)
 
 之前非常有幸收到 [脉脉不得语](https://github.com/inferjay) 的邀请参加 郑州GDG[^1] 举办的 DevFest[^2] 活动，并上台分享了一下自己的拙见，回来之后我将自己演讲的内容整理了一下，并分享给大家，希望对一些人有帮助，关于 郑州GDG 更多的活动内容，大家可以到 [GDGZhengzou](https://github.com/GDGZhengzhou/Events) 查看。另外，欢迎关注我的 [GitHub](https://github.com/GcsSloop) 和  [微博](http://weibo.com/GcsSloop) 。
 
@@ -18,7 +18,7 @@ Hello，大家好，我是 GcsSloop，今天是我第一次在这么多陌生人
 
 ## 第一阶段 - 新手村 
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1fa7a60w9nqj30m80c0gma.jpg)
+![](./image/005Xtdi2jw1fa7a60w9nqj30m80c0gma.jpg)
 
 作为编程的新手，自然是不能在大佬面前装逼的，否则分分钟被吊打。这一阶段我们要先给自己定一个小目标，什么是小目标呢？例如挣他个一百万？这对于我们来说当然是不现实的，作为编程菜鸟，小目标当然是稍微努力一下就能完成的，例如：看完几个新手教程，时间不要太长，两三天能完成的任务量就够了。当然了，光看还不行的，要发在朋友圈，让大家觉得你是一个非常有上进心的人。
 
@@ -33,7 +33,7 @@ Hello，大家好，我是 GcsSloop，今天是我第一次在这么多陌生人
 
 ## 第二阶段 - 初级套装
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1fa7abwlqq8j30m80c0dgm.jpg)
+![](./image/005Xtdi2jw1fa7abwlqq8j30m80c0dgm.jpg)
 
 初级套装虽然攻击和防御力都很弱，但至少能单挑一些野怪了，有了一定的装逼资本，这时候就要在新手村附近刷一些野怪练级。
 
@@ -57,7 +57,7 @@ Hello，大家好，我是 GcsSloop，今天是我第一次在这么多陌生人
 
 ## 第三阶段 - 青铜套装
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1fa7afft4xgj30m80c00tc.jpg)
+![](./image/005Xtdi2jw1fa7afft4xgj30m80c00tc.jpg)
 
 刷野怪时间长了就会发现其实也挺没意思的，不过好在能够练装备，把数据结构知识和一些常见的算法弄明白，熟悉敌人的攻击套路，这样经过一段时间后，装备基本也升级到青铜了，这时候就应该尝试去挑战一下区域小boss了。
 
@@ -75,7 +75,7 @@ Hello，大家好，我是 GcsSloop，今天是我第一次在这么多陌生人
 
 ## 第四阶段 - 白银套装
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1fa7ajkrs5aj30m80c0751.jpg)
+![](./image/005Xtdi2jw1fa7ajkrs5aj30m80c0751.jpg)
 
 单挑完一些区域小boss后，将套装升级为白银，有了一定的装逼资本，此时发现总在朋友圈装逼成就感太差了，这时候可以去论坛、贴吧、社区、微博等地方好好的装一把，让那些装备还没有升级起来的小白看看这套锃亮的白银套装是多么耀眼，不过仍要注意不能太过火，在出来帮助新手解决问题的时候顺便展示一下白银套装的威力就行了，装的太狠容易被大佬发现抓起来吊打，这不就尴尬了么。
 
@@ -103,7 +103,7 @@ Hello，大家好，我是 GcsSloop，今天是我第一次在这么多陌生人
 
 ## 第五阶段 - 黄金套装
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1fa7ar2u1gjj30m80c03zb.jpg)
+![](./image/005Xtdi2jw1fa7ar2u1gjj30m80c03zb.jpg)
 
 在白银阶段，就具备了职业程序员的基本素养，但是离出任CTO，迎娶白富美，走上人生巅峰还差的很远呢，想要实现这些目标，首先要拿到黄金套装。
 
@@ -139,7 +139,7 @@ Hello，大家好，我是 GcsSloop，今天是我第一次在这么多陌生人
 
 ## 第六阶段 - 钻石套装
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1fa7aswevd3j30m80c0gm8.jpg)
+![](./image/005Xtdi2jw1fa7aswevd3j30m80c0gm8.jpg)
 
 能拿到钻石套装的人在全球范围内都是屈指可数的，这一类人通常是某一领域的开拓者，就是我们所说的 XXX之父。这些开拓者已经将自己的影响力渗透进了社会的各行各业，说他们推动了社会的进步也是可以的，我有生之年不说集齐套装，仅仅能拿一件钻石武器便足以令我心满意足了。
 
@@ -153,7 +153,7 @@ Hello，大家好，我是 GcsSloop，今天是我第一次在这么多陌生人
 
 ### 作者微博: [@GcsSloop](http://weibo.com/GcsSloop)
 
-<a href="http://www.gcssloop.com/info/about/" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg"  width="300" style="display:inline;"/> </a>
+<a href="http://www.gcssloop.com/info/about/" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg"  width="300" style="display:inline;"/> </a>
 
 [^1]: GDG 全称 Google Developer Group，中文意思是 **谷歌开发者社区** 。
 

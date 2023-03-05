@@ -233,7 +233,7 @@ public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float
 
 这个我们自己用到的地方比较少，但是也可以帮助我们简单的做出一些有趣的效果，例如下面的这种弹球效果，会根据滑动的力度和方向产生不同的弹跳效果。
 
-![](https://ww2.sinaimg.cn/large/006tKfTcgy1fhe10uwa4fg308c0e6wn5.gif)
+![](./image/006tKfTcgy1fhe10uwa4fg308c0e6wn5.gif)
 
 其实这种原理非常简单，简化之后如下：
 
@@ -378,7 +378,7 @@ detector.setOnDoubleTapListener(new GestureDetector.OnDoubleTapListener() {
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
+<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
 
 ## 参考资料
 

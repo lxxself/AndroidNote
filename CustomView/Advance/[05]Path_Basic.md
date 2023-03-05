@@ -62,8 +62,8 @@ _The Path class encapsulates compound (multiple contour) geometric paths consist
 
 | 图像                                                         | 名称     | 备注                       |
 | ------------------------------------------------------------ | -------- | -------------------------- |
-| ![](http://ww4.sinaimg.cn/thumbnail/005Xtdi2jw1f0zx9g9gggj30f00aiwek.jpg) | 封闭路径 | 首尾相接形成了一个封闭区域 |
-| ![](http://ww1.sinaimg.cn/thumbnail/005Xtdi2jw1f0zxg8ilpxj30f00aimx8.jpg) | 开放路径 | 没有首尾相接形成封闭区域   |
+| ![](./image/005Xtdi2jw1f0zx9g9gggj30f00aiwek.jpg) | 封闭路径 | 首尾相接形成了一个封闭区域 |
+| ![](./image/005Xtdi2jw1f0zxg8ilpxj30f00aimx8.jpg) | 开放路径 | 没有首尾相接形成封闭区域   |
 
 > 这个是我随便画的，仅为展示一下区别，请无视我灵魂画师一般的绘图水准。
 
@@ -73,7 +73,7 @@ _The Path class encapsulates compound (multiple contour) geometric paths consist
 
 前面扯了一大堆概念性的东西。接下来就开始实战了，请诸位看官准备好瓜子、花生、爆米花，坐下来慢慢观看。
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f19mncfcirj305i02j744.jpg)
+![](./image/005Xtdi2jw1f19mncfcirj305i02j744.jpg)
 
 ### 第1组: moveTo、 setLastPoint、 lineTo 和 close
 
@@ -124,7 +124,7 @@ lineTo很简单，只有一个方法，作用也很容易理解，line嘛，顾�
 ```
 
 
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f1ap1tu0w9j30u01hcjse.jpg" width = "270" height = "480"/>  
+<img src="./image/005Xtdi2jw1f1ap1tu0w9j30u01hcjse.jpg" width = "270" height = "480"/>  
 
 在示例中我们调用了两次lineTo，**第一次由于之前没有过操作，所以默认点就是坐标原点O，结果就是坐标原点O到A(200,200)之间连直线(用蓝色圈1标注)。**
 
@@ -162,7 +162,7 @@ lineTo很简单，只有一个方法，作用也很容易理解，line嘛，顾�
 
         canvas.drawPath(path, mPaint);              // 绘制Path
 ```
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2gw1f1aqjptdtjj30u01hct9t.jpg" width = "270" height = "480"/>  
+<img src="./image/005Xtdi2gw1f1aqjptdtjj30u01hct9t.jpg" width = "270" height = "480"/>  
 
 这个和上面演示lineTo的方法类似，只不过在两个lineTo之间添加了一个moveTo。
 
@@ -183,7 +183,7 @@ lineTo很简单，只有一个方法，作用也很容易理解，line嘛，顾�
 
         canvas.drawPath(path, mPaint);              // 绘制Path
 ```
-<img src="http://ww1.sinaimg.cn/large/005Xtdi2gw1f1ari1l9g8j30u01hcab5.jpg" width = "270" height = "480"/> 
+<img src="./image/005Xtdi2gw1f1ari1l9g8j30u01hcab5.jpg" width = "270" height = "480"/> 
 
 **setLastPoint是重置上一次操作的最后一个点，在执行完第一次的lineTo的时候，最后一个点是A(200,200),而setLastPoint更改最后一个点为C(200,100),所以在实际执行的时候，第一次的lineTo就不是从原点O到A(200,200)的连线了，而变成了从原点O到C(200,100)之间的连线了。**
 
@@ -211,7 +211,7 @@ close方法用于连接当前最后一个点和最初的一个点(如果两个�
 
         canvas.drawPath(path, mPaint);              // 绘制Path
 ```
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f1axmfeojzj30u01hcwfi.jpg" width = "270" height = "480"/> 
+<img src="./image/005Xtdi2jw1f1axmfeojzj30u01hcwfi.jpg" width = "270" height = "480"/> 
 
 很明显，两个lineTo分别代表第1和第2条线，而close在此处的作用就算连接了B(200,0)点和原点O之间的第3条线，使之形成一个封闭的图形。
 
@@ -270,7 +270,7 @@ Direction的意思是 方向，趋势。 点进去看一下会发现Direction是
 
         canvas.drawPath(path,mPaint);
 ```
-<img src="http://ww1.sinaimg.cn/large/005Xtdi2gw1f1cmvjtuxcj30u01hcwgm.jpg" width = "270" height = "480"/> 
+<img src="./image/005Xtdi2gw1f1cmvjtuxcj30u01hcwgm.jpg" width = "270" height = "480"/> 
 
 **将上面代码的CW改为CCW再运行一次。接下来就是见证奇迹的时刻，两次运行结果一模一样，有木有很神奇！**
 
@@ -291,7 +291,7 @@ Direction的意思是 方向，趋势。 点进去看一下会发现Direction是
         canvas.drawPath(path,mPaint);
 ```
 
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2jw1f4bg7ly3n7j30u01hc78a.jpg" width = "270" height = "480"/> 
+<img src="./image/005Xtdi2jw1f4bg7ly3n7j30u01hc78a.jpg" width = "270" height = "480"/> 
 
 可以明显看到，图形发生了奇怪的变化。为何会如此呢？
 
@@ -321,7 +321,7 @@ Direction的意思是 方向，趋势。 点进去看一下会发现Direction是
         canvas.drawPath(path,mPaint);
 ```
 
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f4bgkdk8efj30u01hctcu.jpg" width = "270" height = "480"/> 
+<img src="./image/005Xtdi2jw1f4bgkdk8efj30u01hctcu.jpg" width = "270" height = "480"/> 
 
 通过验证发现，发现结果和我们猜想的一样，但是还有一个潜藏的问题不晓得大家可否注意到。**我们用两个点的坐标确定了一个矩形，矩形起始点(A)就是我们指定的第一个点的坐标。**
 
@@ -367,7 +367,7 @@ Direction的意思是 方向，趋势。 点进去看一下会发现Direction是
         canvas.drawPath(path,mPaint);
 ```
 
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f4iylko7zzj30u01hc0tm.jpg" width = "270" height = "480"/> 
+<img src="./image/005Xtdi2gw1f4iylko7zzj30u01hc0tm.jpg" width = "270" height = "480"/> 
 
 首先我们新建的两个Path(矩形和圆形)中心都是坐标原点，我们在将包含圆形的path添加到包含矩形的path之前将其进行移动了一段距离，最终绘制出来的效果就如上面所示。
 
@@ -416,7 +416,7 @@ Direction的意思是 方向，趋势。 点进去看一下会发现Direction是
         canvas.drawPath(path,mPaint);
 ```
 
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f1ihr1s77jj30u01hcmzh.jpg" width = "270" height = "480"/> 
+<img src="./image/005Xtdi2jw1f1ihr1s77jj30u01hcmzh.jpg" width = "270" height = "480"/> 
 
 **示例(arcTo)：**
 ``` java
@@ -434,7 +434,7 @@ Direction的意思是 方向，趋势。 点进去看一下会发现Direction是
         canvas.drawPath(path,mPaint);
 ```
 
-<img src="http://ww1.sinaimg.cn/large/005Xtdi2jw1f1ihsfjexcj30u01hcjts.jpg" width = "270" height = "480"/> 
+<img src="./image/005Xtdi2jw1f1ihsfjexcj30u01hcjts.jpg" width = "270" height = "480"/> 
 
 从上面两张运行效果图可以清晰的看出来两者的区别，我就不再废话了。
 
@@ -511,7 +511,7 @@ log 输出结果:
 
         canvas.drawPath(path,mPaint);
 ```
-<img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f1iv2lnnblj30u01hc3zc.jpg" width = "270" height = "480"/> 
+<img src="./image/005Xtdi2jw1f1iv2lnnblj30u01hc3zc.jpg" width = "270" height = "480"/> 
 
 #### offset
 方法预览：
@@ -550,7 +550,7 @@ log 输出结果:
 
         canvas.drawPath(dst,mPaint);                // 绘制dst
 ```
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2gw1f1ix3vlwlwj30u01hcq3x.jpg" width = "270" height = "480"/> 
+<img src="./image/005Xtdi2gw1f1ix3vlwlwj30u01hcq3x.jpg" width = "270" height = "480"/> 
 
 从运行效果图可以看出，虽然我们在dst中添加了一个矩形，但是并没有表现出来，所以，当dst中存在内容时，dst中原有的内容会被清空，而存放平移后的path。
 
@@ -572,7 +572,7 @@ log 输出结果:
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
+<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300/> </a>
 
 ## 参考资料
 

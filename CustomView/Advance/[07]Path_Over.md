@@ -49,7 +49,7 @@
 
     canvas.drawPath(path,mDeafultPaint);
 ```
-![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f43livlg7ej308c0etmx4.jpg)
+![](./image/005Xtdi2gw1f43livlg7ej308c0etmx4.jpg)
 
 在这个例子中，先移动点到坐标(100，100)处，之后再连接 _点(100，100)_ 到 _(100，200)_ 之间点直线,非常简单，画出来就是一条竖直的线，那接下来看下一个例子：
 
@@ -61,7 +61,7 @@
 
     canvas.drawPath(path,mDeafultPaint);
 ```
-![](http://ww4.sinaimg.cn/large/005Xtdi2gw1f43lj76wckj308c0etaa1.jpg)
+![](./image/005Xtdi2gw1f43lj76wckj308c0etaa1.jpg)
 
 这个例子中，将 lineTo 换成了 rLineTo 可以看到在屏幕上原本是竖直的线变成了倾斜的线。这是因为最终我们连接的是 _(100,100)_ 和 _(200, 300)_ 之间的线段。
 
@@ -90,7 +90,7 @@
 
 这一个比较简单，也容易理解，直接用一个简单示例来说明。
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f417d963qxj308c0dwq33.jpg)
+![](./image/005Xtdi2jw1f417d963qxj308c0dwq33.jpg)
 
 在上图中有一个四边形，我们选取了三个点来判断这些点是否在图形内部。
 
@@ -110,7 +110,7 @@
 
 > **PS: 注意图形中线段的方向性!**
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f42368af2jj308c0dwt8z.jpg)
+![](./image/005Xtdi2jw1f42368af2jj308c0dwt8z.jpg)
 
 >
 >P1: 从P1点发出一条射线，沿射线方向移动，并没有与边相交点部分，环绕数为0，故P1在图形外边。<br/>
@@ -121,7 +121,7 @@
 
 > 注意图形线段的方向，就不详细解释了，用上面的方法进行判断即可。
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2gw1f42cvwvlr7j308c0dwgm8.jpg)
+![](./image/005Xtdi2gw1f42cvwvlr7j308c0dwgm8.jpg)
 
 #### 自相交图形
 
@@ -129,7 +129,7 @@
 
 简单的提一下自相交图形，了解概念即可，下图就是一个简单的自相交图形：
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2gw1f42dp5drq4j308c0dw74b.jpg)
+![](./image/005Xtdi2gw1f42dp5drq4j308c0dw74b.jpg)
 
 #### Android中的填充模式
 
@@ -180,8 +180,8 @@ Inverse 的含义是“相反，对立”，说明反奇偶规则刚好与奇偶
 
 > PS: 白色为背景色，黑色为填充色。
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2gw1f42jji5nm9j308c0et749.jpg)
-![](http://ww1.sinaimg.cn/large/005Xtdi2gw1f42jjtay96j308c0etaa1.jpg)
+![](./image/005Xtdi2gw1f42jji5nm9j308c0et749.jpg)
+![](./image/005Xtdi2gw1f42jjtay96j308c0etaa1.jpg)
 
 ##### 图形边的方向对非零奇偶环绕数规则填充结果的影响
 
@@ -208,8 +208,8 @@ Inverse 的含义是“相反，对立”，说明反奇偶规则刚好与奇偶
     canvas.drawPath(path, mDeafultPaint);                       // 绘制Path
 ```
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2gw1f430h944zhj308c0et3yj.jpg)
-![](http://ww3.sinaimg.cn/large/005Xtdi2gw1f430fono6uj308c0et74a.jpg)
+![](./image/005Xtdi2gw1f430h944zhj308c0et3yj.jpg)
+![](./image/005Xtdi2gw1f430fono6uj308c0et74a.jpg)
 
 
 ### 布尔操作(API19)
@@ -220,7 +220,7 @@ Inverse 的含义是“相反，对立”，说明反奇偶规则刚好与奇偶
 
 如太极中的阴阳鱼，如果用贝塞尔曲线制作的话，可能需要六段贝塞尔曲线才行，而在这里我们可以用四个Path通过布尔运算得到，而且会相对来说更容易理解一点。
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f43b9o4yfuj308c0etq2y.jpg)
+![](./image/005Xtdi2jw1f43b9o4yfuj308c0etq2y.jpg)
 
 ``` java
     canvas.translate(mViewWidth / 2, mViewHeight / 2);
@@ -249,11 +249,11 @@ Path的布尔运算有五种逻辑，如下:
 
 | 逻辑名称               | 类比   | 说明                       | 示意图                                      |
 | ------------------ | ---- | ------------------------ | ---------------------------------------- |
-| DIFFERENCE         | 差集   | Path1中减去Path2后剩下的部分      | ![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f43j85gcaqj305k03c0sn.jpg) |
-| REVERSE_DIFFERENCE | 差集   | Path2中减去Path1后剩下的部分      | ![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f43jbaaw80j305k03c0sn.jpg) |
-| INTERSECT          | 交集   | Path1与Path2相交的部分         | ![](http://ww3.sinaimg.cn/large/005Xtdi2gw1f43jbj4iddj305k03c746.jpg) |
-| UNION              | 并集   | 包含全部Path1和Path2          | ![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f43jbqk8rbj305k03cmx4.jpg) |
-| XOR                | 异或   | 包含Path1与Path2但不包括两者相交的部分 | ![](http://ww3.sinaimg.cn/large/005Xtdi2gw1f43jby8c60j305k03c0sp.jpg) |
+| DIFFERENCE         | 差集   | Path1中减去Path2后剩下的部分      | ![](./image/005Xtdi2gw1f43j85gcaqj305k03c0sn.jpg) |
+| REVERSE_DIFFERENCE | 差集   | Path2中减去Path1后剩下的部分      | ![](./image/005Xtdi2gw1f43jbaaw80j305k03c0sn.jpg) |
+| INTERSECT          | 交集   | Path1与Path2相交的部分         | ![](./image/005Xtdi2gw1f43jbj4iddj305k03c746.jpg) |
+| UNION              | 并集   | 包含全部Path1和Path2          | ![](./image/005Xtdi2gw1f43jbqk8rbj305k03cmx4.jpg) |
+| XOR                | 异或   | 包含Path1与Path2但不包括两者相交的部分 | ![](./image/005Xtdi2gw1f43jby8c60j305k03c0sp.jpg) |
 
 #### 布尔运算方法
 
@@ -278,7 +278,7 @@ Path的布尔运算有五种逻辑，如下:
 
 #### 布尔运算示例
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2gw1f43jz8xnbxj308c0etwes.jpg)
+![](./image/005Xtdi2gw1f43jz8xnbxj308c0etwes.jpg)
 
 代码：
 
@@ -342,7 +342,7 @@ Path的布尔运算有五种逻辑，如下:
 
 计算path边界的一个简单示例.
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2gw1f44gxz4k1vj308c0etaa4.jpg)
+![](./image/005Xtdi2gw1f44gxz4k1vj308c0etaa4.jpg)
 
 代码：
 
@@ -394,7 +394,7 @@ Path中常用的方法到此已经结束，希望能够帮助大家加深对Path
 
 ### 作者微博: [@GcsSloop](http://weibo.com/GcsSloop)
 
-<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300 height=100 /> </a>
+<a href="https://github.com/GcsSloop/AndroidNote/blob/magic-world/FINDME.md" target="_blank"> <img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300 height=100 /> </a>
 
 ## 参考资料
 [Path](https://developer.android.com/reference/android/graphics/Path.html)<br/>

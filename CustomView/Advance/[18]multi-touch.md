@@ -396,7 +396,7 @@ public class MultiTouchTest extends CustomView {
 
 这段代码也非常短，其核心就是通过判断数值为 1 的 pointerId 是否存在，如果存在就在 move 的时候取出其坐标，并绘制出来。
 
-![SecondPoint](http://ww3.sinaimg.cn/large/006y8lVagw1fbs1vkt1mwj30bo0jq3z3.jpg)
+![SecondPoint](./image/006y8lVagw1fbs1vkt1mwj30bo0jq3z3.jpg)
 
 > 虽然逻辑简单，但个人感觉写起来还是有些麻烦，如果有更简单的方案欢迎告诉我。
 
@@ -485,7 +485,7 @@ public class DragView1 extends CustomView {
 
 这个版本非常简单，当然了，如果正常使用(只使用一个手指)的话也不会出问题，但是当使用多个手指，且有抬起和按下的时候就可能出问题，下面用一个典型的场景演示一下：
 
-![dragview1](http://ww2.sinaimg.cn/large/006y8lVagw1fbs1vm2rppg308c0d4kfm.gif)
+![dragview1](./image/006y8lVagw1fbs1vm2rppg308c0d4kfm.gif)
 
 注意在第二个手指按下，第一个手指抬起时，此时原本的第二个手指会被识别为第一个，所以图片会直接跳动到第二个手指位置。
 
@@ -570,7 +570,7 @@ public class DragView extends CustomView {
 
 可以看到，比起上一个版本，只添加了少量代码，就变得更加“智能”了，可以准确识别某一个手指，不会因为手指抬起而认错手指。
 
-![dragview2](http://ww2.sinaimg.cn/large/006y8lVagw1fbs1vmwpu4g308c0d4nf9.gif)
+![dragview2](./image/006y8lVagw1fbs1vmwpu4g308c0d4nf9.gif)
 
 **重点注意最后，第一个手指抬起之后，图片并没有跳跃到第二个手指的位置。**
 
@@ -582,7 +582,7 @@ public class DragView extends CustomView {
 
 因为这不仅要追踪两个手指的位置，还要根据位置变化来计算缩放比例和缩放中心，单单这两个非常简单的数学问题就能难倒一大批人。
 
-![-510a02a1a3f8d16d](http://ww2.sinaimg.cn/large/006y8lVagw1fbs1vnfni1g307b07ct8m.gif)
+![-510a02a1a3f8d16d](./image/006y8lVagw1fbs1vnfni1g307b07ct8m.gif)
 
 当然了，很多麻烦问题都有简单的解决方案，假如说我们真的要实现一个可以用两个或者多个手指缩放的控件，何必要自己算呢，可以尝试一下 Android 自带的解决方案：**手势检测(GestureDetector)**，不仅能自动帮你计算好缩放比例和缩放中心，而且还可以检测出 单击、长按、滑屏 等不同的手势，不过这就不是本篇的事情了，以后有时间会写一下有关手势检测的用法(继续挖坑)。
 
@@ -602,7 +602,7 @@ public class DragView extends CustomView {
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
+<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
 
 ## 参考资料
 

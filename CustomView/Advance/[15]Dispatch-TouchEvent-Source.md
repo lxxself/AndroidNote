@@ -29,7 +29,7 @@
 > * 本次事例中 ACTION_MOVE 有多次触发。
 > * 如果仅仅是单击(手指按下再抬起)，不会触发 ACTION_MOVE。
 
-![](http://ww4.sinaimg.cn/large/005Xtdi2jw1f8oz1704ylg30bo0jqgmx.gif)
+![](./image/005Xtdi2jw1f8oz1704ylg30bo0jqgmx.gif)
 
 ## 事件分发、拦截与消费
 
@@ -68,7 +68,7 @@ A: **如果不去看源码，想一下让自己设计会怎样？**
 
 **所以事件的调度顺序应该是 `onTouchListener > onTouchEvent > onLongClickListener > onClickListener`**。
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f8r8jg9mw5j308y07mglw.jpg)
+![](./image/005Xtdi2jw1f8r8jg9mw5j308y07mglw.jpg)
 
 下面我们来看一下实际测试结果:
 
@@ -164,7 +164,7 @@ public boolean onTouchEvent(MotionEvent event) {
 
 > **注意了，第一个重点要出现了(敲黑板)!**
 >
-> ![](http://ww3.sinaimg.cn/large/005Xtdi2jw1f8p431ehi3j304w04wmx1.jpg)
+> ![](./image/005Xtdi2jw1f8p431ehi3j304w04wmx1.jpg)
 >
 > **注意上面代码中存在一个 `return true;` 并且是只要 View 可点击就返回 true，就表示事件被消费了。**
 >
@@ -259,7 +259,7 @@ public boolean dispatchTouchEvent(MotionEvent ev) {
 </RelativeLayout>
 ```
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f8r0i301sgj308w0fmwez.jpg)
+![](./image/005Xtdi2jw1f8r0i301sgj308w0fmwez.jpg)
 
 当手指点击有重叠区域时，分如下几种情况:
 
@@ -540,7 +540,7 @@ public boolean dispatchTouchEvent(MotionEvent ev) {
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
+<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
 
 
 

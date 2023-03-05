@@ -2,13 +2,13 @@
 
 本次的安利对象是一个 Markdown 编辑器，是会长见过的最简单，最优雅的编辑器，先来看一下它的界面吧：
 
-![QQ20161207-0](http://ww3.sinaimg.cn/large/006y8lVajw1fahmo8d9udj30ph0brgo0.jpg)
+![QQ20161207-0](./image/006y8lVajw1fahmo8d9udj30ph0brgo0.jpg)
 
 
 
 它的界面非常简单，有多种主题可选，更重要的是**它的预览界面和编辑界面是一体的，而不像其他编辑器那样是左右分开的。**
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1fahnsrelggg30fp0dwakd.gif)
+![](./image/005Xtdi2jw1fahnsrelggg30fp0dwakd.gif)
 
 从上面的示例中可以看出，其输入模式支持多种，不论是手动输入语法还是使用快捷键，都非常的流畅，实时看到效果变化，除此之外 Typora 还有很多优点。
 
@@ -46,11 +46,11 @@
 
 Trpora 也用到了这一特性，点击 `File > Revert To > Browse All Versions` 就能看到了。以我之前发布的一篇文章为例：
 
-![](http://ww2.sinaimg.cn/large/006y8lVajw1facti4okblj31400p0gs8.jpg)
+![](./image/006y8lVajw1facti4okblj31400p0gs8.jpg)
 
  **上图中左边为当前版本，右边为选中版本，最右侧是时间线，使用这一功能可以将文章回溯到任意时间点，妈妈再也不怕我的文章内容丢失啦，也成功避免了以下这种情况 ▼**
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2jw1factpcyrfqj30rs0ja40l.jpg)
+![](./image/005Xtdi2jw1factpcyrfqj30rs0ja40l.jpg)
 
 由于这一功能是 Mac 系统提供的，所以不仅对纯文本有效，对 iWork 也是有效的，iWork 上面也有版本回溯功能，像 key，numbers，pages 都支持版本回溯，中文版点 `文件 > 复原 > 浏览所有版本` 即可看到过去保存的数据。
 
@@ -74,15 +74,15 @@ Trpora 也用到了这一特性，点击 `File > Revert To > Browse All Versions
 
 **首先安装 iPic，运行 iPic，之后点击 `Edit > Image Tools > Upload Local Images via iPic` 就像下面这样就行了。**
 
-![![QQ20161207-0](../Downloads/QQ20161207-0.png)QQ20161202-8](http://ww1.sinaimg.cn/large/006y8lVajw1facuf1yjjkj30fo0dmq4v.jpg)
+![![QQ20161207-0](../Downloads/QQ20161207-0.png)QQ20161202-8](./image/006y8lVajw1facuf1yjjkj30fo0dmq4v.jpg)
 
 **如果你觉得这样还是很麻烦的话，还有另外的选项，可以选择插入本地图片的时候自动上传到服务器，当然了，为了保护个人隐私，这一个选项默认是关闭的，首先你要找到首选项，点击 `Typora > Preferences` 或者快捷键 `Command + ,` 都行，之后打开以下两个选项，其中一个选项是后面用到的。**
 
-![QQ20161202-9](http://ww3.sinaimg.cn/large/006y8lVajw1fahlaeo8pej30by0ddgn8.jpg)
+![QQ20161202-9](./image/006y8lVajw1fahlaeo8pej30by0ddgn8.jpg)
 
 **打开之后继续选择 `Edit > Image Tools > When Insert Local Images > Upload Image via iPic` 它的意思是当插入本地图片时自动通过 iPic 上传到服务器上。**
 
-![QQ20161203-0](http://ww2.sinaimg.cn/large/006y8lVajw1fahlajkq1gj30qe0hwtas.jpg)
+![QQ20161203-0](./image/006y8lVajw1fahlajkq1gj30qe0hwtas.jpg)
 
 这种方案虽然方便，但是会长并不推荐大家这么做，主要还是不安全，误操作的话可能会将一些包含个人隐私的照片上传上去。
 
@@ -116,5 +116,5 @@ Trpora 也用到了这一特性，点击 `File > Revert To > Browse All Versions
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
+<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
 

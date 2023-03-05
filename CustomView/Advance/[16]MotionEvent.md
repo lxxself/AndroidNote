@@ -50,7 +50,7 @@ MotionEvent 负责集中处理所有类型设备的输入事件，但是由于�
 > * 本次事例中 ACTION_MOVE 有多次触发。
 > * 如果仅仅是单击(手指按下再抬起)，不会触发 ACTION_MOVE。
 
-![单点触摸事件流程](http://ww4.sinaimg.cn/large/005Xtdi2jw1f8oz1704ylg30bo0jqgmx.gif)
+![单点触摸事件流程](./image/005Xtdi2jw1f8oz1704ylg30bo0jqgmx.gif)
 
 针对单点触控的事件处理一般是这样写的:
 
@@ -94,7 +94,7 @@ public boolean onTouchEvent(MotionEvent event) {
 
 这样说可能不太容易理解，咱举个例子? 
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2jw1f9auctayt4j302s03o744.jpg)
+![](./image/005Xtdi2jw1f9auctayt4j302s03o744.jpg)
 
 > 例如：上层 View 是一个 RecyclerView，它收到了一个 `ACTION_DOWN` 事件，由于这个可能是点击事件，所以它先传递给对应 ItemView，询问 ItemView 是否需要这个事件，然而接下来又传递过来了一个 `ACTION_MOVE` 事件，且移动的方向和 RecyclerView 的可滑动方向一致，所以 RecyclerView 判断这个事件是滚动事件，于是要收回事件处理权，这时候对应的 ItemView 会收到一个 `ACTION_CANCEL` ，并且不会再收到后续事件。
 >
@@ -358,7 +358,7 @@ MotionEvent支持获取某些输入设备(手指或触控笔)的与屏幕的接�
 
 ### 作者微博: <a href="http://weibo.com/GcsSloop" target="_blank">@GcsSloop</a>
 
-<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
+<a href="http://www.gcssloop.com/info/about" target="_blank"><img src="./image/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" style="display:inline;" /></a>
 
 
 

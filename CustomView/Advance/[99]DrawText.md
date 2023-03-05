@@ -4,7 +4,7 @@
 
 之前由于个人的疏忽以及对问题的想当然，没有进行验证，在 [【安卓自定义View进阶 - 图片文字】](https://github.com/GcsSloop/AndroidNote/blob/master/CustomView/Advance/%5B4%5DCanvas_PictureText.md) 这篇文章中出现了一个错误，有不少眼睛雪亮的网友都发现了该错误并给予了反馈，非常感谢这些网友的帮助。
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2jw1f3i3wsruf7j306o06o3yg.jpg)
+![](./image/005Xtdi2jw1f3i3wsruf7j306o06o3yg.jpg)
 
 ## 错误原因
 
@@ -16,7 +16,7 @@
 
 > PS：基线(BaseLine)有两条，是用户指定的坐标确定的，在默认情况下，基线X在字符串左侧，基线y在字符串下方(但并不是最低的部分)。
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2gw1f3jppylp6zj30dw08c74v.jpg)
+![](./image/005Xtdi2gw1f3jppylp6zj30dw08c74v.jpg)
 
 ## 分析这样设计的原因
 
@@ -24,11 +24,11 @@
 
 > A : 既然采用这种对齐方式，必然有其缘由，至少不是为了坑我这种小白。据本人猜测可能有以下原因：
 * 1.符合人类书写习惯，不论是汉字还是英文或是其他语言，我们在书写对齐的时候都是以下面为基准线的，而不是上面，（**我们默认的基准线类似于四线格中的第三条线**）。<br/>
-![](http://ww4.sinaimg.cn/large/005Xtdi2gw1f3knbp87ttj30dw08cq38.jpg)<br/>
+![](./image/005Xtdi2gw1f3knbp87ttj30dw08cq38.jpg)<br/>
 * 2.字的特点，字的显示不仅有有中文汉字，还有一些特殊字符，并且大部分是根据下面对齐的，如果把对齐的基线放到上面并使其显示整齐，设计太麻烦，如下：<br/>
-![](http://ww1.sinaimg.cn/large/005Xtdi2gw1f3knvptqsrj30dw08cmxw.jpg)<br/>
+![](./image/005Xtdi2gw1f3knvptqsrj30dw08cmxw.jpg)<br/>
 * 3.字体的特点，我们都知道，字有很多的字体风格，不同字体风格的大小是不同的，如果以以上面为基准线而让其底部对齐，这设计难度简直不敢想象：<br/>
-![](http://ww3.sinaimg.cn/large/005Xtdi2gw1f3ko9oln9lj30dw08cmxo.jpg)<br/>
+![](./image/005Xtdi2gw1f3ko9oln9lj30dw08cmxo.jpg)<br/>
 **综上所述，基线y放到下面不仅符合人的书写习惯，而且更加便于设计。**
 
 ## drawText从入门到懵逼
@@ -64,7 +64,7 @@ Align对应的方法如下：
 
 在实际运用中基线与模式之间的关系则如下图所示：
 
-![](http://ww2.sinaimg.cn/large/005Xtdi2gw1f3l2d6gw0nj30dw08c74q.jpg)
+![](./image/005Xtdi2gw1f3l2d6gw0nj30dw08c74q.jpg)
 
 > PS 该图片是截屏加工所得，其中红色的先是各自的基准线。注意汉字有一部分是在基准线下面的。
 
@@ -108,7 +108,7 @@ public void setStyle (Paint.Style style)    // 设置样式
 
 效果如下：
 
-![](http://ww3.sinaimg.cn/large/005Xtdi2gw1f3nh9r8ih0j30dw08c3z4.jpg)
+![](./image/005Xtdi2gw1f3nh9r8ih0j30dw08c3z4.jpg)
 
 核心代码：
 
@@ -157,7 +157,7 @@ descent | +   | 单个字符的最低点与基线距离的推荐值
 bottom  | +   | 在指定字形和大小的情况下，字符最低点与基线之间的距离
 leading	| +   | 行间距,当前行bottom与下一行top之间的距离的推荐值 (通常为0，因为top与ascent，bottom与leading之间的距离足够作为行间距了)
 
-![](http://ww1.sinaimg.cn/large/005Xtdi2gw1f3syr8fbd1j30dw08c755.jpg)
+![](./image/005Xtdi2gw1f3syr8fbd1j30dw08c755.jpg)
 
 看了上面啰啰嗦嗦讲了一堆，你可能会产生一些疑问，这里我简单解释一下：
 
@@ -261,7 +261,7 @@ leading	| +   | 行间距,当前行bottom与下一行top之间的距离的推荐
 
 结果：
 
-<img src="http://ww3.sinaimg.cn/large/005Xtdi2jw1f3wlau69aaj30u01hcgmd.jpg" width=300 />
+<img src="./image/005Xtdi2jw1f3wlau69aaj30u01hcgmd.jpg" width=300 />
 
 ## 绘制多行
 
